@@ -1,9 +1,11 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas do documento -->
+    <!-- ==========================================
+         CONFIGURAÇÕES DO DOCUMENTO
+    =========================================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -61,29 +63,21 @@
     =========================================== -->
     <main>
 
-        <!-- Apresentação do visualizador -->
+        <!-- ==========================================
+             APRESENTAÇÃO DO VISUALIZADOR
+        =========================================== -->
         <section class="visualizer-hero">
             <div class="container">
-                <div class="row">
 
-                    <!-- Espaço reservado para ícone -->
-                    <div class="col-md-2">
-                        <!-- Inserir ícone posteriormente -->
-                    </div>
+                <!-- Identificação da seção -->
+                <span>EXECUÇÃO PASSO A PASSO</span>
 
-                    <!-- Identificação da seção -->
-                    <div class="col-md-10">
-                        <span>Execução passo a passo</span>
-                    </div>
-
-                </div>
-
-                <!-- Título e descrição da página -->
-                <h1>Visualizador</h1>
+                <h1>Visualizador.</h1>
 
                 <p>
-                    Acompanhe a execução dos algoritmos de ordenação de forma visual e
-                    entenda como os elementos são reorganizados.
+                    Acompanhe a execução dos algoritmos de ordenação
+                    de forma visual e entenda como os elementos são
+                    reorganizados.
                 </p>
 
             </div>
@@ -97,225 +91,180 @@
             <div class="container">
                 <div class="row">
 
-                    <!-- Coluna de seleção e informações dos algoritmos -->
-                    <article class="col-md-3">
+                    <!-- ==========================================
+                         COLUNA LATERAL: SELEÇÃO E INFORMAÇÕES
+                    =========================================== -->
+                    <aside class="col-12 col-md-3">
 
-                        <h2>Selecione um algoritmo</h2>
+                        <div class="visualizer-sidebar">
 
-                        <!-- Opções de seleção dos algoritmos -->
-                        <fieldset>
-                            <legend>Algoritmos disponíveis</legend>
+                            <h2>Selecione um algoritmo</h2>
 
-                            <!-- Opção Bubble Sort -->
-                            <input
-                                type="radio"
-                                id="bubble"
-                                name="algoritmo"
-                                value="bubble"
-                                checked
-                            >
-                            <label for="bubble">Bubble Sort</label>
-                            <br>
+                            <!-- Opções de seleção dos algoritmos -->
+                            <fieldset class="algorithm-selection">
 
-                            <!-- Opção Insertion Sort -->
-                            <input
-                                type="radio"
-                                id="insertion"
-                                name="algoritmo"
-                                value="insertion"
-                            >
-                            <label for="insertion">Insertion Sort</label>
-                            <br>
+                                <legend>Algoritmos disponíveis</legend>
 
-                        </fieldset>
+                                <!-- Opção Bubble Sort -->
+                                <div class="algorithm-option bubble-option">
+                                    <input
+                                        type="radio"
+                                        id="bubble"
+                                        name="algoritmo"
+                                        value="bubble"
+                                        checked
+                                    >
 
-
-                        <!-- Informações do Bubble Sort -->
-                        <div id="bubble-info">
-
-                            <h3>Sobre o algoritmo</h3>
-
-                            <p>
-                                Compara elementos adjacentes e troca aqueles que estão fora de
-                                ordem. A cada passagem, o maior valor restante é colocado na
-                                posição correta.
-                            </p>
-
-                            <!-- Complexidade do Bubble Sort -->
-                            <div class="row">
-
-                                <div class="col-md-6">
-                                    <p>Melhor caso</p>
-                                    <span>O(n)</span>
+                                    <label for="bubble">
+                                        Bubble Sort
+                                    </label>
                                 </div>
 
-                                <div class="col-md-6">
-                                    <p>Caso médio</p>
-                                    <span>O(n²)</span>
+                                <!-- Opção Insertion Sort -->
+                                <div class="algorithm-option insertion-option">
+                                    <input
+                                        type="radio"
+                                        id="insertion"
+                                        name="algoritmo"
+                                        value="insertion"
+                                    >
+
+                                    <label for="insertion">
+                                        Insertion Sort
+                                    </label>
                                 </div>
 
-                            </div>
-                        </div>
+                            </fieldset>
 
 
-                        <!-- Informações do Insertion Sort -->
-                        <div id="insertion-info" hidden>
+                            <!-- ==========================================
+                                 INFORMAÇÕES DO BUBBLE SORT
+                            =========================================== -->
+                            <div id="bubble-info">
 
-                            <h3>Sobre o algoritmo</h3>
+                                <h3>Sobre o algoritmo</h3>
 
-                            <p>
-                                Organiza os elementos gradualmente, inserindo cada valor na
-                                posição correta em relação aos elementos anteriores.
-                            </p>
+                                <p>
+                                    Compara elementos adjacentes e troca
+                                    aqueles que estão fora de ordem.
+                                    A cada passagem, o maior valor restante
+                                    é colocado na posição correta.
+                                </p>
 
-                            <!-- Complexidade do Insertion Sort -->
-                            <div class="row">
+                                <!-- Complexidade do Bubble Sort -->
+                                <div class="algorithm-complexity">
 
-                                <div class="col-md-6">
-                                    <p>Melhor caso</p>
-                                    <span>O(n)</span>
-                                </div>
+                                    <div class="complexity-item best-case">
+                                        <p>Melhor caso</p>
+                                        <span>O(n)</span>
+                                    </div>
 
-                                <div class="col-md-6">
-                                    <p>Caso médio</p>
-                                    <span>O(n²)</span>
+                                    <div class="complexity-item average-case">
+                                        <p>Caso médio</p>
+                                        <span>O(n²)</span>
+                                    </div>
+
                                 </div>
 
                             </div>
+
+
+                            <!-- ==========================================
+                                 INFORMAÇÕES DO INSERTION SORT
+                            =========================================== -->
+                            <div id="insertion-info" hidden>
+
+                                <h3>Sobre o algoritmo</h3>
+
+                                <p>
+                                    Organiza os elementos gradualmente,
+                                    inserindo cada valor na posição correta
+                                    em relação aos elementos anteriores.
+                                </p>
+
+                                <!-- Complexidade do Insertion Sort -->
+                                <div class="algorithm-complexity">
+
+                                    <div class="complexity-item best-case">
+                                        <p>Melhor caso</p>
+                                        <span>O(n)</span>
+                                    </div>
+
+                                    <div class="complexity-item average-case">
+                                        <p>Caso médio</p>
+                                        <span>O(n²)</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
+                    </aside>
 
-                    </article>
 
+                    <!-- ==========================================
+                         COLUNA DE VISUALIZAÇÃO DOS ALGORITMOS
+                    =========================================== -->
+                    <div class="col-12 col-md-9">
 
-                    <!-- Coluna de visualização dos algoritmos -->
-                    <div class="col-md-9">
-
-                        <!-- Visualização do Bubble Sort -->
-                        <div id="bubble-display">
+                        <!-- ==========================================
+                             VISUALIZAÇÃO DO BUBBLE SORT
+                        =========================================== -->
+                        <div id="bubble-display" class="algorithm-display bubble-display">
 
                             <h2>Execução do Bubble Sort</h2>
 
-                            <div class="row">
+                            <!-- Área demonstrativa do algoritmo -->
+                            <div class="algorithm-demonstration">
 
-                                <!-- Espaçamento lateral -->
-                                <div class="col-md-1">
-                                    <!-- Espaço reservado -->
-                                </div>
+                                <span>Demonstração do Bubble Sort</span>
 
-                                <div class="col-md-10">
-
-                                    <div class="row">
-
-                                        <!-- Espaçamento lateral -->
-                                        <div class="col-md-1">
-                                            <!-- Espaço reservado -->
-                                        </div>
-
-                                        <!-- Identificação da demonstração -->
-                                        <div class="col-md-11">
-                                            <span>Demonstração do Bubble Sort</span>
-                                        </div>
-
-                                    </div>
-
-
-                                    <!-- GIF demonstrativo do Bubble Sort -->
-                                    <div class="row">
-
-                                        <!-- Espaçamento lateral -->
-                                        <div class="col-md-2">
-                                            <!-- Espaço reservado -->
-                                        </div>
-
-                                        <!-- Imagem da execução -->
-                                        <div class="col-md-8">
-                                            <img
-                                                src="src/assets/images/bubble-sort.gif"
-                                                alt="Demonstração da execução do Bubble Sort"
-                                                class="img-fluid"
-                                            >
-                                        </div>
-
-                                        <!-- Espaçamento lateral -->
-                                        <div class="col-md-2">
-                                            <!-- Espaço reservado -->
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <!-- Espaçamento lateral -->
-                                <div class="col-md-1">
-                                    <!-- Espaço reservado -->
+                                <!-- GIF demonstrativo do Bubble Sort -->
+                                <div class="algorithm-animation">
+                                    <img
+                                        src="src/assets/images/bubble-sort.gif"
+                                        alt="Demonstração da execução do Bubble Sort"
+                                        class="img-fluid"
+                                    >
                                 </div>
 
                             </div>
+
                         </div>
 
 
-                        <!-- Visualização do Insertion Sort -->
-                        <div id="insertion-display" hidden>
+                        <!-- ==========================================
+                             VISUALIZAÇÃO DO INSERTION SORT
+                        =========================================== -->
+                        <div
+                            id="insertion-display"
+                            class="algorithm-display insertion-display"
+                            hidden
+                        >
 
                             <h2>Execução do Insertion Sort</h2>
 
-                            <div class="row">
+                            <!-- Área demonstrativa do algoritmo -->
+                            <div class="algorithm-demonstration">
 
-                                <!-- Espaçamento lateral -->
-                                <div class="col-md-1">
-                                    <!-- Espaço reservado -->
-                                </div>
+                                <span>Demonstração do Insertion Sort</span>
 
-                                <div class="col-md-10">
-
-                                    <div class="row">
-
-                                        <!-- Espaçamento lateral -->
-                                        <div class="col-md-1">
-                                            <!-- Espaço reservado -->
-                                        </div>
-
-                                        <!-- Identificação da demonstração -->
-                                        <div class="col-md-11">
-                                            <span>Demonstração do Insertion Sort</span>
-                                        </div>
-
-                                    </div>
-
-
-                                    <!-- GIF demonstrativo do Insertion Sort -->
-                                    <div class="row">
-
-                                        <!-- Espaçamento lateral -->
-                                        <div class="col-md-2">
-                                            <!-- Espaço reservado -->
-                                        </div>
-
-                                        <!-- Imagem da execução -->
-                                        <div class="col-md-8">
-                                            <img
-                                                src="src/assets/images/insertion-sort.gif"
-                                                alt="Demonstração da execução do Insertion Sort"
-                                                class="img-fluid"
-                                            >
-                                        </div>
-
-                                        <!-- Espaçamento lateral -->
-                                        <div class="col-md-2">
-                                            <!-- Espaço reservado -->
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <!-- Espaçamento lateral -->
-                                <div class="col-md-1">
-                                    <!-- Espaço reservado -->
+                                <!-- GIF demonstrativo do Insertion Sort -->
+                                <div class="algorithm-animation">
+                                    <img
+                                        src="src/assets/images/insertion-sort.gif"
+                                        alt="Demonstração da execução do Insertion Sort"
+                                        class="img-fluid"
+                                    >
                                 </div>
 
                             </div>
+
                         </div>
 
                     </div>
+
                 </div>
             </div>
         </section>
@@ -328,7 +277,7 @@
     =========================================== -->
     <footer>
 
-        <!-- Organização das três colunas do footer -->
+        <!-- Organização das três colunas do rodapé -->
         <div class="row">
 
             <!-- Primeira coluna: identidade do projeto -->
@@ -351,8 +300,8 @@
 
                 <!-- Descrição do projeto -->
                 <p>
-                    Uma plataforma acadêmica para aprender algoritmos de ordenação de
-                    forma visual e interativa.
+                    Uma plataforma acadêmica para aprender algoritmos
+                    de ordenação de forma visual e interativa.
                 </p>
 
                 <a href="algoritmos.html">Explorar algoritmos →</a>
@@ -418,7 +367,6 @@
 
                     </div>
 
-
                     <!-- Logos das tecnologias -->
                     <div class="row">
 
@@ -442,6 +390,7 @@
                 </div>
 
             </div>
+
         </div>
 
 
@@ -452,6 +401,10 @@
 
     </footer>
 
+
+    <!-- ==========================================
+         SCRIPTS
+    =========================================== -->
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
