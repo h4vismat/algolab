@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas do documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entenda a notação Big O e a complexidade dos algoritmos de ordenação.">
+
+    <title>Complexidade | AlgoLab</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS próprio do projeto -->
+    <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/layout.css">
+    <link rel="stylesheet" href="src/css/components.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="src/assets/images/favicon.svg">
+</head>
+
+<body>
+
+    <!-- ==========================================
+         CABEÇALHO E NAVEGAÇÃO PRINCIPAL
+    =========================================== -->
+    <header>
+
+        <nav aria-label="Navegação principal">
+
+            <!-- Logo do projeto -->
+            <div>
+                <a href="index.html">AlgoLab</a>
+            </div>
+
+            <!-- Links de navegação entre as páginas -->
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="algoritmos.html">Algoritmos</a></li>
+                <li><a href="visualizador.html">Visualizador</a></li>
+                <li>
+                    <a href="complexidade.html" aria-current="page">Complexidade</a>
+                </li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ==========================================
+         CONTEÚDO PRINCIPAL
+    =========================================== -->
+    <main>
+
+        <!-- ==========================================
+             APRESENTAÇÃO DA PÁGINA
+        =========================================== -->
+        <section class="complexity-hero">
+
+            <!-- Título e apresentação -->
+            <div class="container">
+
+                <span>ENTENDA A EFICIÊNCIA</span>
+
+                <h1>Complexidade de algoritmos.</h1>
+
+                <p>
+                    Como o custo de execução de um algoritmo cresce
+                    conforme o tamanho da entrada?
+                </p>
+
+            </div>
+
+            <!-- Destaque para o conceito de Big O -->
+            <div class="container">
+
+                <span>CONCEITO FUNDAMENTAL</span>
+
+                <h2>Big O</h2>
+
+                <p>
+                    Uma forma de descrever o crescimento do custo de um
+                    algoritmo, especialmente quando a quantidade de
+                    dados aumenta.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             INTRODUÇÃO À COMPLEXIDADE
+        =========================================== -->
+        <section class="complexity-intro">
+
+            <!-- Apresentação do conceito -->
+            <div class="container">
+
+                <span>01 — INTRODUÇÃO</span>
+
+                <h2>O que é complexidade?</h2>
+
+                <p>
+                    A complexidade de um algoritmo representa a quantidade
+                    de recursos computacionais necessários para sua execução.
+                    Ela permite analisar como o desempenho muda conforme
+                    o tamanho da entrada aumenta.
+                </p>
+
+            </div>
+
+            <!-- Conceitos de tempo e espaço -->
+            <div class="container">
+
+                <div class="row">
+
+                    <!-- Complexidade de tempo -->
+                    <article class="col-md-5">
+
+                        <h3>Tempo</h3>
+
+                        <p>
+                            Analisa como a quantidade de operações realizadas
+                            pelo algoritmo cresce conforme o tamanho da entrada.
+                        </p>
+
+                    </article>
+
+                    <!-- Espaçamento entre os cards -->
+                    <div class="col-md-2">
+                        <!-- Espaço reservado -->
+                    </div>
+
+                    <!-- Complexidade de espaço -->
+                    <article class="col-md-5">
+
+                        <h3>Espaço</h3>
+
+                        <p>
+                            Analisa a quantidade de memória adicional necessária
+                            para a execução do algoritmo.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             CLASSES DE COMPLEXIDADE
+        =========================================== -->
+        <section class="complexity-classes">
+
+            <!-- Apresentação das classes -->
+            <div class="container">
+
+                <span>02 — CLASSES DE COMPLEXIDADE</span>
+
+                <h2>Como o custo cresce?</h2>
+
+                <p>
+                    As classes de complexidade descrevem diferentes
+                    padrões de crescimento do custo de um algoritmo.
+                </p>
+
+            </div>
+
+            <!-- Organização dos cartões de complexidade -->
+            <div class="container">
+
+                <!-- Primeira linha: O(1) e O(log n) -->
+                <div class="row">
+
+                    <article class="col-md-5">
+
+                        <h3>O(1)</h3>
+
+                        <p>Constante</p>
+
+                        <span>
+                            O custo permanece independente do tamanho da entrada.
+                        </span>
+
+                    </article>
+
+                    <!-- Espaçamento entre os cards -->
+                    <div class="col-md-2">
+                        <!-- Espaço reservado -->
+                    </div>
+
+                    <article class="col-md-5">
+
+                        <h3>O(log n)</h3>
+
+                        <p>Logarítmica</p>
+
+                        <span>
+                            O crescimento ocorre de maneira lenta conforme
+                            a entrada aumenta.
+                        </span>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Segunda linha: O(n) e O(n log n) -->
+                <div class="row">
+
+                    <article class="col-md-5">
+
+                        <h3>O(n)</h3>
+
+                        <p>Linear</p>
+
+                        <span>
+                            O custo cresce proporcionalmente ao tamanho
+                            da entrada.
+                        </span>
+
+                    </article>
+
+                    <!-- Espaçamento entre os cards -->
+                    <div class="col-md-2">
+                        <!-- Espaço reservado -->
+                    </div>
+
+                    <article class="col-md-5">
+
+                        <h3>O(n log n)</h3>
+
+                        <p>Linearítmica</p>
+
+                        <span>
+                            Combina crescimento linear e logarítmico.
+                        </span>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Terceira linha: O(n²) e O(2ⁿ) -->
+                <div class="row">
+
+                    <article class="col-md-5">
+
+                        <h3>O(n²)</h3>
+
+                        <p>Quadrática</p>
+
+                        <span>
+                            O custo cresce proporcionalmente ao quadrado
+                            do tamanho da entrada.
+                        </span>
+
+                    </article>
+
+                    <!-- Espaçamento entre os cards -->
+                    <div class="col-md-2">
+                        <!-- Espaço reservado -->
+                    </div>
+
+                    <article class="col-md-5">
+
+                        <h3>O(2ⁿ)</h3>
+
+                        <p>Exponencial</p>
+
+                        <span>
+                            O custo cresce rapidamente conforme a entrada aumenta.
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             COMPARAÇÃO DOS ALGORITMOS
+        =========================================== -->
+        <section class="complexity-algorithms">
+
+            <!-- Apresentação da comparação -->
+            <div class="container">
+
+                <span>03 — COMPARAÇÃO DOS ALGORITMOS</span>
+
+                <h2>Bubble Sort × Insertion Sort</h2>
+
+                <p>
+                    Compare o comportamento dos dois algoritmos de ordenação
+                    estudados no projeto em diferentes cenários de execução.
+                </p>
+
+            </div>
+
+            <!-- Tabela comparativa -->
+            <div class="container">
+
+                <table class="complexity-table">
+
+                    <thead>
+                        <tr>
+                            <th>Algoritmo</th>
+                            <th>Melhor caso</th>
+                            <th>Caso médio</th>
+                            <th>Pior caso</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">Bubble Sort</th>
+                            <td>O(n)</td>
+                            <td>O(n²)</td>
+                            <td>O(n²)</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Insertion Sort</th>
+                            <td>O(n)</td>
+                            <td>O(n²)</td>
+                            <td>O(n²)</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <!-- Observação sobre o desempenho -->
+            <div class="container">
+
+                <p>
+                    Ambos os algoritmos apresentam complexidade quadrática
+                    nos casos médio e pior. Entretanto, quando a entrada
+                    já está ordenada, os dois podem apresentar desempenho
+                    linear.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         RODAPÉ
+    =========================================== -->
+    <footer>
+
+        <!-- Organização das três colunas do footer -->
+        <div class="row">
+
+            <!-- Primeira coluna: identidade do projeto -->
+            <div class="col-12 col-md-5 footer-brand">
+
+                <div class="row">
+
+                    <!-- Espaço reservado para logo -->
+                    <div class="col-3 footer-logo">
+                        <!-- Inserir logo posteriormente -->
+                    </div>
+
+                    <!-- Nome e identificação do projeto -->
+                    <div class="col-9">
+
+                        <h2>AlgoLab</h2>
+                        <p>Visualizador de algoritmos</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Descrição do projeto -->
+                <p>
+                    Uma plataforma acadêmica para aprender algoritmos de ordenação de
+                    forma visual e interativa.
+                </p>
+
+                <a href="algoritmos.html">Explorar algoritmos →</a>
+
+            </div>
+
+
+            <!-- Segunda coluna: navegação -->
+            <div class="col-12 col-md-3 footer-navigation">
+
+                <h3>Navegação</h3>
+
+                <nav aria-label="Navegação do rodapé">
+
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="algoritmos.html">Algoritmos</a></li>
+                        <li><a href="visualizador.html">Visualizador</a></li>
+                        <li><a href="complexidade.html">Complexidade</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+
+            <!-- Terceira coluna: equipe e tecnologias -->
+            <div class="col-12 col-md-4 footer-information">
+
+                <!-- Integrantes da equipe -->
+                <div class="footer-team">
+
+                    <h3>Equipe</h3>
+
+                    <div class="row">
+
+                        <!-- Espaço reservado para ícone -->
+                        <div class="col-3 footer-icon">
+                            <!-- Inserir ícone posteriormente -->
+                        </div>
+
+                        <!-- Nomes dos integrantes -->
+                        <div class="col-9">
+                            <p>Lucca, Ramon, Jonatha, Rafael e Edson</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Tecnologias utilizadas -->
+                <div class="footer-technologies">
+
+                    <div class="row">
+
+                        <!-- Espaço reservado para ícone -->
+                        <div class="col-3 footer-icon">
+                            <!-- Inserir ícone posteriormente -->
+                        </div>
+
+                        <div class="col-9">
+                            <h3>Tecnologias</h3>
+                        </div>
+
+                    </div>
+
+                    <!-- Logos das tecnologias -->
+                    <div class="row">
+
+                        <div class="col-3">
+                            <!-- Logo HTML -->
+                        </div>
+
+                        <div class="col-3">
+                            <!-- Logo CSS -->
+                        </div>
+
+                        <div class="col-3">
+                            <!-- Logo JavaScript -->
+                        </div>
+
+                        <div class="col-3">
+                            <!-- Logo Bootstrap -->
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Créditos e direitos autorais -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 AlgoLab. Projeto acadêmico.</p>
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
