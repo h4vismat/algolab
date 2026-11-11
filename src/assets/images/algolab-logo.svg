@@ -1,62 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-labelledby="title desc">
   <title id="title">AlgoLab</title>
-  <desc id="desc">Logotipo vetorial com compasso de desenho antigo e lettering editorial.</desc>
+  <desc id="desc">Logo do AlgoLab com chaves de código, barras ascendentes e uma curva de progresso em verde menta e verde escuro.</desc>
   <defs>
-    <style>
-      .ink { stroke:#4A3020; fill:none; stroke-linecap:round; stroke-linejoin:round; }
-      .fine { stroke-width:2.2; }
-      .medium { stroke-width:4; }
-      .heavy { stroke-width:7; }
-      .mint { fill:#BCEEDB; stroke:#4A3020; stroke-width:2.5; }
-      .word { fill:#4A3020; font-family:"URW Chancery L","Apple Chancery","Palatino Linotype",Georgia,serif; font-style:italic; font-weight:600; }
-    </style>
+    <linearGradient id="mint" x1="0" y1="1" x2="0.9" y2="0">
+      <stop offset="0" stop-color="#8BD8B8"/>
+      <stop offset="1" stop-color="#BCEEDB"/>
+    </linearGradient>
   </defs>
-
-  <!-- Emblema: compasso de desenho reinterpretado em traço de gravura -->
-  <g transform="translate(42 12)">
-    <!-- arco geométrico interrompido -->
-    <path class="ink fine" d="M157 52 A142 142 0 0 0 45 246"/>
-    <path class="ink fine" d="M179 52 A142 142 0 0 1 291 246"/>
-    <path class="ink fine" d="M76 277 Q168 328 260 277"/>
-
-    <!-- cabeça e articulação -->
-    <path class="ink medium" d="M168 18 L168 42"/>
-    <path class="ink medium" d="M153 18 Q168 4 183 18 L179 34 Q168 42 157 34 Z"/>
-    <circle cx="168" cy="83" r="37" fill="#F8F5EF" stroke="#4A3020" stroke-width="5"/>
-    <circle class="ink medium" cx="168" cy="83" r="25"/>
-    <circle class="mint" cx="168" cy="83" r="8"/>
-    <path class="ink fine" d="M168 49 V58 M168 108 V117 M134 83 H143 M193 83 H202"/>
-    <path class="ink fine" d="M145 60 L151 66 M185 100 L191 106 M191 60 L185 66 M151 100 L145 106"/>
-
-    <!-- hastes -->
-    <path d="M145 112 L82 278 L98 265 L163 119 Z" fill="#E8D5B7" stroke="#4A3020" stroke-width="4" stroke-linejoin="round"/>
-    <path d="M191 112 L254 278 L238 265 L173 119 Z" fill="#E8D5B7" stroke="#4A3020" stroke-width="4" stroke-linejoin="round"/>
-    <!-- linhas de gravação nas hastes -->
-    <path class="ink fine" d="M143 139 L99 253 M150 143 L108 251 M193 139 L237 253 M186 143 L228 251"/>
-    <path class="ink fine" d="M130 174 L145 180 M123 193 L138 199 M116 212 L131 218 M109 231 L124 237"/>
-    <path class="ink fine" d="M206 174 L191 180 M213 193 L198 199 M220 212 L205 218 M227 231 L212 237"/>
-
-    <!-- anéis de ajuste -->
-    <path d="M115 194 L140 203 L135 218 L109 209 Z" fill="#BCEEDB" stroke="#4A3020" stroke-width="3"/>
-    <path d="M221 194 L196 203 L201 218 L227 209 Z" fill="#BCEEDB" stroke="#4A3020" stroke-width="3"/>
-    <path class="ink fine" d="M117 201 L136 208 M219 201 L200 208"/>
-
-    <!-- pontas -->
-    <path class="ink medium" d="M82 278 L75 302 L98 265"/>
-    <path class="ink medium" d="M254 278 L261 302 L238 265"/>
-    <path class="ink fine" d="M75 302 L82 292 M261 302 L254 292"/>
-
-    <!-- pequeno detalhe geométrico central -->
-    <path d="M168 177 L180 189 L168 201 L156 189 Z" fill="#BCEEDB" stroke="#4A3020" stroke-width="2"/>
+  <g fill="none" stroke="#24483D" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M86 53 C61 53 55 67 55 91 L55 103 C55 121 47 130 29 136 C47 142 55 151 55 169 L55 181 C55 205 61 219 86 219"/>
+    <path d="M264 53 C289 53 295 67 295 91 L295 103 C295 121 303 130 321 136 C303 142 295 151 295 169 L295 181 C295 205 289 219 264 219"/>
   </g>
-
-  <!-- Wordmark -->
-  <g transform="translate(390 0)">
-    <text class="word" x="0" y="207" font-size="142" letter-spacing="-5">AlgoLab</text>
-    <!-- filete editorial e pequeno losango -->
-    <path class="ink fine" d="M10 254 Q190 270 370 254 T730 254"/>
-    <path d="M372 246 L381 254 L372 262 L363 254 Z" fill="#BCEEDB" stroke="#4A3020" stroke-width="1.8"/>
-    <text x="8" y="300" fill="#725640" font-family="Georgia,serif" font-size="21" letter-spacing="4">MATHEMATICS · LOGIC · ALGORITHMS</text>
+  <g>
+    <rect x="91" y="145" width="39" height="49" rx="10" fill="url(#mint)"/>
+    <rect x="145" y="112" width="39" height="82" rx="10" fill="url(#mint)"/>
+    <rect x="199" y="76" width="39" height="118" rx="10" fill="url(#mint)"/>
   </g>
+  <path d="M82 199 C123 206 172 193 220 164 C237 154 248 143 256 130" fill="none" stroke="#73CBA5" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="256" cy="130" r="10" fill="#24483D" stroke="#BCEEDB" stroke-width="5"/>
+  <text x="365" y="166" font-family="Inter, Montserrat, Arial, sans-serif" font-size="112" font-weight="750" letter-spacing="-5" fill="#24483D">Algo</text>
+  <text x="590" y="166" font-family="Inter, Montserrat, Arial, sans-serif" font-size="112" font-weight="750" letter-spacing="-5" fill="#73CBA5">Lab</text>
 </svg>
