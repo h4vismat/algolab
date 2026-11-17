@@ -17,8 +17,19 @@
     <link rel="stylesheet" href="src/css/layout.css">
     <link rel="stylesheet" href="src/css/components.css">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="src/assets/images/favicon.svg">
+    <!-- Fonte textual -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FavIcons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 </head>
 
 <body>
@@ -27,27 +38,24 @@
          CABEÇALHO E NAVEGAÇÃO PRINCIPAL
     =========================================== -->
     <header>
+      <nav
+        aria-label="Navegação principal"
+        class="d-flex justify-content-between align-items-center px-5"
+      >
+        <!-- Logo do projeto -->
+        <div>
+          <img src="src/assets/images/algolab-logo.svg" alt="Logo AlgoLab" />
+        </div>
 
-        <nav aria-label="Navegação principal">
-
-            <!-- Logo do projeto -->
-            <div>
-                <a href="index.html">AlgoLab</a>
-            </div>
-
-            <!-- Links de navegação entre as páginas -->
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="algoritmos.html">Algoritmos</a></li>
-                <li><a href="visualizador.html">Visualizador</a></li>
-                <li>
-                    <a href="complexidade.html" aria-current="page">Complexidade</a>
-                </li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-
-        </nav>
-
+        <!-- Links de navegação entre as páginas -->
+        <ul class="d-flex align-items-center gap-4 list-unstyled mb-0">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="algoritmos.html">Algoritmos</a></li>
+          <li><a href="visualizador.html">Visualizador</a></li>
+          <li><a href="complexidade.html" aria-current="page">Complexidade</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
     </header>
 
 
@@ -364,136 +372,78 @@
     <!-- ==========================================
          RODAPÉ
     =========================================== -->
-    <footer>
+    <footer class="footer">
+      <div class="row g-4 footer-content px-3">
+        <!-- Coluna 1: Identidade do projeto -->
+        <div class="col-12 col-md-5 footer-brand">
+          <div class="d-flex align-items-center gap-2 footer-brand-header">
+            <img
+              src="src/assets/images/algolab-favicon.svg"
+              alt="Ícone AlgoLab"
+              class="footer-favicon"
+            />
 
-        <!-- Organização das três colunas do footer -->
-        <div class="row">
-
-            <!-- Primeira coluna: identidade do projeto -->
-            <div class="col-12 col-md-5 footer-brand">
-
-                <div class="row">
-
-                    <!-- Espaço reservado para logo -->
-                    <div class="col-3 footer-logo">
-                        <!-- Inserir logo posteriormente -->
-                    </div>
-
-                    <!-- Nome e identificação do projeto -->
-                    <div class="col-9">
-
-                        <h2>AlgoLab</h2>
-                        <p>Visualizador de algoritmos</p>
-
-                    </div>
-
-                </div>
-
-                <!-- Descrição do projeto -->
-                <p>
-                    Uma plataforma acadêmica para aprender algoritmos de ordenação de
-                    forma visual e interativa.
-                </p>
-
-                <a href="algoritmos.html">Explorar algoritmos →</a>
-
+            <div>
+              <h2>AlgoLab</h2>
+              <p>Visualizador de algoritmos</p>
             </div>
+          </div>
 
+          <p class="footer-description">
+            Uma plataforma acadêmica para aprender algoritmos de ordenação de
+            forma visual e interativa.
+          </p>
 
-            <!-- Segunda coluna: navegação -->
-            <div class="col-12 col-md-3 footer-navigation">
-
-                <h3>Navegação</h3>
-
-                <nav aria-label="Navegação do rodapé">
-
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="algoritmos.html">Algoritmos</a></li>
-                        <li><a href="visualizador.html">Visualizador</a></li>
-                        <li><a href="complexidade.html">Complexidade</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                    </ul>
-
-                </nav>
-
-            </div>
-
-
-            <!-- Terceira coluna: equipe e tecnologias -->
-            <div class="col-12 col-md-4 footer-information">
-
-                <!-- Integrantes da equipe -->
-                <div class="footer-team">
-
-                    <h3>Equipe</h3>
-
-                    <div class="row">
-
-                        <!-- Espaço reservado para ícone -->
-                        <div class="col-3 footer-icon">
-                            <!-- Inserir ícone posteriormente -->
-                        </div>
-
-                        <!-- Nomes dos integrantes -->
-                        <div class="col-9">
-                            <p>Lucca, Ramon, Jonatha, Rafael e Edson</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Tecnologias utilizadas -->
-                <div class="footer-technologies">
-
-                    <div class="row">
-
-                        <!-- Espaço reservado para ícone -->
-                        <div class="col-3 footer-icon">
-                            <!-- Inserir ícone posteriormente -->
-                        </div>
-
-                        <div class="col-9">
-                            <h3>Tecnologias</h3>
-                        </div>
-
-                    </div>
-
-                    <!-- Logos das tecnologias -->
-                    <div class="row">
-
-                        <div class="col-3">
-                            <!-- Logo HTML -->
-                        </div>
-
-                        <div class="col-3">
-                            <!-- Logo CSS -->
-                        </div>
-
-                        <div class="col-3">
-                            <!-- Logo JavaScript -->
-                        </div>
-
-                        <div class="col-3">
-                            <!-- Logo Bootstrap -->
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+          <div class="text-center footer-button rounded-3 p-2">
+              <a href="algoritmos.html" class="footer-link">
+                Explorar algoritmos →
+              </a>
+          </div>
         </div>
 
+        <!-- Coluna 2: Navegação -->
+        <div class="col-12 col-md-3 footer-navigation">
+          <h3>Navegação</h3>
 
-        <!-- Créditos e direitos autorais -->
-        <div class="footer-bottom">
-            <p>&copy; 2026 AlgoLab. Projeto acadêmico.</p>
+          <nav aria-label="Navegação do rodapé">
+            <ul class="list-unstyled mb-0">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="algoritmos.html">Algoritmos</a></li>
+              <li><a href="visualizador.html">Visualizador</a></li>
+              <li><a href="complexidade.html">Complexidade</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+          </nav>
         </div>
 
+        <!-- Coluna 3: Informações -->
+        <div class="col-12 col-md-4 footer-information">
+          <div class="footer-team mb-5">
+            <h3>Equipe</h3>
+
+            <div class="d-flex gap-3">
+              <i class="fa-solid fa-users"></i>
+              <p>Lucca, Ramon, Jonatha, Rafael e Edson.</p>
+            </div>
+          </div>
+
+          <div class="footer-technologies">
+            <h3>Tecnologias</h3>
+
+            <div class="d-flex align-items-center gap-4">
+              <i class="fa-brands fa-html5 html-icon" title="HTML5"></i>
+              <i class="fa-brands fa-css3-alt css-icon" title="CSS3"></i>
+              <i class="fa-brands fa-js javascript-icon" title="JavaScript"></i>
+              <i class="fa-brands fa-bootstrap bootstrap-icon" title="Bootstrap"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rodapé inferior -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 AlgoLab. Projeto acadêmico.</p>
+      </div>
     </footer>
 
 

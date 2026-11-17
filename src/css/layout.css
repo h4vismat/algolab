@@ -1,0 +1,247 @@
+
+/* ==========================================
+   1. HEADER
+========================================== */
+
+header {
+    background-color: var(--color-cream);
+}
+
+header img {
+    width: 180px;
+    height: auto;
+}
+
+header a {
+    position: relative;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* Barrinha */
+
+header a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-green);
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+
+/* Hover */
+
+header a:hover {
+    color: var(--color-green);
+}
+
+header a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Página atual */
+
+header a[aria-current="page"]::after {
+    transform: scaleX(1);
+}
+
+/* Esconde a barrinha da página atual durante a navegação */
+
+header ul:hover a[aria-current="page"]::after {
+    transform: scaleX(0);
+}
+
+
+/* ==========================================
+   2. FOOTER
+========================================== */
+
+.footer {
+    background-color: var(--color-cream);
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.footer-content {
+    padding-bottom: 40px;
+}
+
+/* IDENTIDADE DO PROJETO */
+
+.footer-favicon {
+    width: 48px;
+    height: 48px;
+}
+
+.footer-brand h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.footer-brand-header p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+.footer-description {
+    max-width: 380px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 20px 0 12px;
+}
+
+.footer-link {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* NAVEGAÇÃO E INFORMAÇÕES */
+
+.footer h3 {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.footer-navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-navigation a {
+    color: inherit;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-navigation a:hover {
+    color: var(--color-green);
+}
+
+/* EQUIPE */
+
+.footer-team {
+    margin-bottom: 28px;
+}
+
+.footer-team i {
+    font-size: 1.2rem;
+}
+
+.footer-team p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* TECNOLOGIAS */
+
+.footer-technologies i {
+    font-size: 1.7rem;
+}
+
+/* COPYRIGHT */
+
+.footer-bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 18px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+/* ÍCONES DAS TECNOLOGIAS */
+
+.html-icon {
+    color: #E34F26;
+}
+
+.css-icon {
+    color: #264DE4;
+}
+
+.javascript-icon {
+    color: #F7DF1E;
+}
+
+.bootstrap-icon {
+    color: #7952B3;
+}
+
+
+/* ==========================================
+   3. RESPONSIVIDADE
+========================================== */
+
+/* TABLETS E CELULARES */
+
+@media (max-width: 767.98px) {
+
+    /* HEADER */
+
+    header img {
+        width: 150px;
+    }
+
+    /* FOOTER */
+
+    .footer-content {
+        padding-bottom: 30px;
+    }
+
+    .footer-brand {
+        margin-bottom: 10px;
+    }
+
+    .footer-logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .footer-information {
+        margin-top: 10px;
+    }
+
+    .footer-team {
+        margin-bottom: 24px;
+    }
+}
+
+/* CELULARES PEQUENOS */
+
+@media (max-width: 575.98px) {
+
+    .footer-favicon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-tech-icons {
+        gap: 20px !important;
+    }
+
+    .footer-bottom {
+        padding: 16px 0;
+    }
+}
+
+/* ==========================================
+   CONTAINER GLOBAL
+========================================== */
+
+.page-container {
+    padding-inline: var(--page-padding);
+}

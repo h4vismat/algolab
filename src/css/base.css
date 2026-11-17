@@ -1,0 +1,33 @@
+
+/* ==========================================
+   1. VARIÁVEIS GLOBAIS
+========================================== */
+
+:root {
+    /* Paleta oficial AlgoLab */
+    --color-cream: #FAF7F2;
+    --color-mint: #BCEEDB;
+    --color-pink: #F2BFC3;
+    --color-peach: #F8D9B8;
+    --color-lilac: #D6CCF5;
+    --color-green: #B8E8D4;
+
+    /* Tipografia */
+    --font-primary: 'Manrope', sans-serif;
+
+     /* Espaçamento */
+    --page-padding: clamp(24px, 5vw, 80px);
+}
+
+
+/* ==========================================
+   2. CONFIGURAÇÕES GLOBAIS
+========================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+}
