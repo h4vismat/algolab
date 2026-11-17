@@ -1,0 +1,415 @@
+/* ==========================================
+   ALGOLAB — PÁGINA DE COMPLEXIDADE
+   Estilos exclusivos de complexidade.html
+========================================== */
+
+/* 1. BASE */
+main {
+    color: #40352f;
+    background-color: var(--color-cream);
+}
+
+.complexity-hero,
+.complexity-intro,
+.complexity-classes,
+.complexity-algorithms {
+    padding-block: clamp(42px, 6vw, 76px);
+}
+
+.complexity-hero .container,
+.complexity-intro .container,
+.complexity-classes .container,
+.complexity-algorithms .container {
+    max-width: 1140px;
+}
+
+/* 2. HERO E DESTAQUE BIG O */
+.complexity-hero {
+    padding-top: clamp(48px, 7vw, 88px);
+    background-color: var(--color-cream);
+}
+
+.complexity-hero .container:first-child > span,
+.complexity-intro .container:first-child > span,
+.complexity-classes .container:first-child > span,
+.complexity-algorithms .container:first-child > span {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #82766c;
+    font-size: 0.88rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+.complexity-hero h1 {
+    max-width: 850px;
+    margin: 0 0 16px;
+    color: #40352f;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.complexity-hero .container:first-child p {
+    max-width: 820px;
+    margin: 0;
+    color: #71665e;
+    font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+    font-weight: 600;
+    line-height: 1.65;
+}
+
+.complexity-hero .container:nth-child(2) {
+    margin-top: 30px;
+    padding: clamp(24px, 4vw, 38px);
+    border-radius: 26px;
+    background-color: var(--color-lilac);
+}
+
+.complexity-hero .container:nth-child(2) > span {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #746394;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+.complexity-hero h2 {
+    margin: 0 0 10px;
+    color: #40352f;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 800;
+}
+
+.complexity-hero .container:nth-child(2) p {
+    max-width: 800px;
+    margin: 0;
+    color: #51463f;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.65;
+}
+
+/* 3. INTRODUÇÃO — TEMPO E ESPAÇO */
+.complexity-intro {
+    background-color: #f3efe7;
+}
+
+.complexity-intro h2,
+.complexity-classes h2,
+.complexity-algorithms h2 {
+    margin: 0 0 14px;
+    color: #40352f;
+    font-size: clamp(1.8rem, 3.5vw, 2.55rem);
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.complexity-intro .container:first-child p,
+.complexity-classes .container:first-child p,
+.complexity-algorithms .container:first-child p {
+    max-width: 850px;
+    margin: 0;
+    color: #71665e;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.complexity-intro .container:nth-child(2) {
+    margin-top: 28px;
+}
+
+.complexity-intro .row {
+    --bs-gutter-x: 1.25rem;
+    --bs-gutter-y: 1.25rem;
+}
+
+.complexity-intro .row > article {
+    padding: clamp(22px, 3vw, 32px);
+    border-radius: 22px;
+}
+
+.complexity-intro .row > article:first-of-type {
+    background-color: var(--color-mint);
+}
+
+.complexity-intro .row > article:last-of-type {
+    background-color: var(--color-peach);
+}
+
+.complexity-intro .row > .col-md-2 {
+    display: none;
+}
+
+.complexity-intro .row > article {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.complexity-intro article h3 {
+    margin: 0 0 10px;
+    color: #40352f;
+    font-size: clamp(1.5rem, 2.6vw, 2rem);
+    font-weight: 800;
+}
+
+.complexity-intro article p {
+    margin: 0;
+    color: #51463f;
+    font-weight: 600;
+    line-height: 1.65;
+}
+
+/* 4. CLASSES DE COMPLEXIDADE */
+.complexity-classes {
+    background-color: var(--color-cream);
+}
+
+.complexity-classes > .container:nth-child(2) {
+    margin-top: 26px;
+}
+
+.complexity-classes .row {
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 1rem;
+    margin-bottom: 16px;
+}
+
+.complexity-classes .row:last-child {
+    margin-bottom: 0;
+}
+
+.complexity-classes .row > .col-md-2 {
+    display: none;
+}
+
+.complexity-classes .row > article {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.complexity-classes .row > article {
+    min-height: 145px;
+    padding: clamp(20px, 3vw, 28px);
+    border-radius: 22px;
+}
+
+.complexity-classes .row:nth-child(1) > article:first-of-type {
+    background-color: var(--color-mint);
+}
+
+.complexity-classes .row:nth-child(1) > article:last-of-type {
+    background-color: var(--color-lilac);
+}
+
+.complexity-classes .row:nth-child(2) > article:first-of-type {
+    background-color: var(--color-peach);
+}
+
+.complexity-classes .row:nth-child(2) > article:last-of-type {
+    background-color: var(--color-pink);
+}
+
+.complexity-classes .row:nth-child(3) > article:first-of-type {
+    background-color: #e8d8c8;
+}
+
+.complexity-classes .row:nth-child(3) > article:last-of-type {
+    background-color: #d8cbbd;
+}
+
+.complexity-classes article h3 {
+    margin: 0 0 8px;
+    color: #40352f;
+    font-size: clamp(1.9rem, 3.5vw, 2.6rem);
+    font-weight: 800;
+}
+
+.complexity-classes article p {
+    margin: 0 0 8px;
+    color: #40352f;
+    font-size: 1.05rem;
+    font-weight: 800;
+}
+
+.complexity-classes article span {
+    display: block;
+    color: #51463f;
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* 5. COMPARAÇÃO DOS ALGORITMOS */
+.complexity-algorithms {
+    background-color: #f3efe7;
+}
+
+.complexity-algorithms > .container:nth-child(2) {
+    margin-top: 24px;
+}
+
+.complexity-table {
+    width: 100%;
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 18px;
+    background-color: #eee8dc;
+    color: #40352f;
+}
+
+.complexity-table th,
+.complexity-table td {
+    padding: 17px 20px;
+    border-bottom: 1px solid rgb(64 53 47 / 12%);
+    text-align: left;
+    vertical-align: middle;
+}
+
+.complexity-table thead th {
+    background-color: var(--color-mint);
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.complexity-table tbody th {
+    font-weight: 800;
+}
+
+.complexity-table tbody td {
+    font-weight: 600;
+}
+
+.complexity-table tbody tr:last-child th,
+.complexity-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.complexity-table + * {
+    margin-top: 20px;
+}
+
+.complexity-algorithms > .container:last-child {
+    margin-top: 20px;
+}
+
+.complexity-algorithms > .container:last-child p {
+    margin: 0;
+    padding: 20px 22px;
+    border-radius: 18px;
+    background-color: #eee8dc;
+    color: #71665e;
+    font-size: 0.98rem;
+    font-weight: 600;
+    line-height: 1.65;
+}
+
+/* 6. RESPONSIVIDADE */
+@media (max-width: 767.98px) {
+    .complexity-intro .row > article,
+    .complexity-classes .row > article {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .complexity-hero,
+    .complexity-intro,
+    .complexity-classes,
+    .complexity-algorithms {
+        padding-block: 42px;
+    }
+
+    .complexity-hero {
+        padding-top: 44px;
+    }
+
+    .complexity-intro .container:nth-child(2),
+    .complexity-classes > .container:nth-child(2) {
+        margin-top: 22px;
+    }
+
+    .complexity-classes .row > article {
+        min-height: 130px;
+    }
+
+    .complexity-table {
+        min-width: 620px;
+    }
+
+    .complexity-algorithms > .container:nth-child(2) {
+        overflow-x: auto;
+        padding-bottom: 6px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .complexity-hero h1 {
+        font-size: 2.45rem;
+    }
+
+    .complexity-hero .container:nth-child(2) {
+        padding: 24px;
+        border-radius: 22px;
+    }
+
+    .complexity-intro .container:first-child p,
+    .complexity-classes .container:first-child p,
+    .complexity-algorithms .container:first-child p {
+        font-size: 0.98rem;
+    }
+
+    .complexity-classes .row > article {
+        min-height: 122px;
+        padding: 18px;
+    }
+
+    .complexity-classes article h3 {
+        font-size: 1.8rem;
+    }
+
+    .complexity-table th,
+    .complexity-table td {
+        padding: 14px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* ==========================================
+   AJUSTES DE RODAPÉ E LARGURA DA PÁGINA
+   Mantém o rodapé consistente com as referências visuais.
+========================================== */
+footer.footer {
+    padding-top: 36px;
+    background-color: #493a32;
+    color: var(--color-cream);
+}
+
+footer.footer > .footer-content {
+    width: auto;
+    margin-inline: 0;
+}
+
+footer.footer a,
+footer.footer p,
+footer.footer h2,
+footer.footer h3 {
+    color: var(--color-cream);
+}
+
+footer.footer .footer-navigation a:hover {
+    color: var(--color-mint);
+}
+
+footer.footer .footer-bottom {
+    border-top-color: rgb(250 247 242 / 25%);
+}
+
+@media (max-width: 767.98px) {
+    footer.footer > .footer-content {
+        row-gap: 1.5rem;
+    }
+}

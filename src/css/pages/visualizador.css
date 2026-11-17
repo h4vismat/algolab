@@ -1,0 +1,410 @@
+/* ==========================================
+   ALGOLAB — PÁGINA DO VISUALIZADOR
+   Estilos exclusivos de visualizador.html
+========================================== */
+
+/* 1. BASE DA PÁGINA */
+main {
+    color: #40352f;
+    background-color: var(--color-cream);
+}
+
+.visualizer-hero,
+.visualizer-content {
+    color: #40352f;
+}
+
+/* 2. APRESENTAÇÃO */
+.visualizer-hero {
+    padding: clamp(44px, 6vw, 76px) 0 38px;
+    background-color: var(--color-cream);
+}
+
+.visualizer-hero .container,
+.visualizer-content > .container {
+    max-width: 1200px;
+}
+
+.visualizer-hero span {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background-color: var(--color-mint);
+    color: #398b70;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+.visualizer-hero h1 {
+    margin: 0 0 16px;
+    color: #40352f;
+    font-size: clamp(2.6rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.08;
+}
+
+.visualizer-hero p {
+    max-width: 760px;
+    margin: 0;
+    color: #71665e;
+    font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+    font-weight: 600;
+    line-height: 1.65;
+}
+
+/* 3. ÁREA DO VISUALIZADOR */
+.visualizer-content {
+    padding: 28px 0 clamp(48px, 6vw, 76px);
+    background-color: #f3efe7;
+}
+
+.visualizer-content > .container > .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+    align-items: stretch;
+}
+
+/* Painel lateral */
+.visualizer-sidebar {
+    height: 100%;
+    padding: clamp(20px, 2.5vw, 28px);
+    border-radius: 26px;
+    background-color: #eee8dc;
+}
+
+.visualizer-sidebar h2 {
+    margin: 0 0 20px;
+    color: #40352f;
+    font-size: clamp(1.25rem, 2vw, 1.55rem);
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.algorithm-selection {
+    min-width: 0;
+    margin: 0;
+    padding: 0 0 22px;
+    border: 0;
+    border-bottom: 1px solid rgb(64 53 47 / 16%);
+}
+
+.algorithm-selection legend {
+    float: none;
+    width: auto;
+    margin-bottom: 14px;
+    color: #71665e;
+    font-size: 0.82rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.algorithm-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 13px 14px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: filter 180ms ease, transform 180ms ease;
+}
+
+.algorithm-option:hover {
+    filter: saturate(1.08);
+    transform: translateY(-1px);
+}
+
+.algorithm-option input {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 auto;
+    margin: 0;
+    accent-color: #398b70;
+}
+
+.algorithm-option label {
+    color: #40352f;
+    font-size: 0.98rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.bubble-option {
+    background-color: var(--color-mint);
+}
+
+.insertion-option {
+    background-color: var(--color-lilac);
+}
+
+.algorithm-option input:focus-visible {
+    outline: 3px solid #40352f;
+    outline-offset: 3px;
+}
+
+#bubble-info,
+#insertion-info {
+    padding-top: 22px;
+}
+
+#bubble-info h3,
+#insertion-info h3 {
+    margin: 0 0 12px;
+    color: #40352f;
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+#bubble-info > p,
+#insertion-info > p {
+    margin: 0 0 18px;
+    color: #71665e;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.65;
+}
+
+/* Cartões de complexidade da barra lateral */
+.algorithm-complexity {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.complexity-item {
+    padding: 14px 16px;
+    border-radius: 16px;
+}
+
+.complexity-item p {
+    margin: 0 0 5px;
+    color: #40352f;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.complexity-item span {
+    color: #40352f;
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.best-case {
+    background-color: var(--color-peach);
+}
+
+.average-case {
+    background-color: var(--color-pink);
+}
+
+/* 4. PAINEL DE DEMONSTRAÇÃO */
+.algorithm-display {
+    min-height: 100%;
+    padding: clamp(22px, 3vw, 34px);
+    border-radius: 28px;
+    background-color: var(--color-mint);
+}
+
+.algorithm-display h2 {
+    margin: 0 0 22px;
+    color: #40352f;
+    font-size: clamp(1.45rem, 2.6vw, 2rem);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.algorithm-demonstration {
+    min-height: 420px;
+    padding: clamp(20px, 3vw, 32px);
+    border-radius: 22px;
+    background-color: rgb(255 255 255 / 62%);
+}
+
+.algorithm-demonstration > span {
+    display: block;
+    margin-bottom: 24px;
+    color: #58796e;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Os GIFs citados no HTML não estão presentes no ZIP.
+   Esta área mantém uma representação visual sem exibir ícone quebrado. */
+.algorithm-animation {
+    position: relative;
+    display: flex;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.algorithm-animation::before {
+    width: 22px;
+    height: 100px;
+    border-radius: 8px;
+    background-color: #e9b8bf;
+    box-shadow:
+        -34px 28px 0 var(--color-peach),
+        34px 8px 0 var(--color-lilac),
+        68px -22px 0 var(--color-peach);
+    content: "";
+    transform: translateX(-17px);
+}
+
+.algorithm-animation::after {
+    position: absolute;
+    bottom: 14px;
+    color: #58796e;
+    content: "Representação visual estática";
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.insertion-display {
+    background-color: var(--color-lilac);
+}
+
+.insertion-display .algorithm-demonstration {
+    background-color: rgb(255 255 255 / 62%);
+}
+
+.insertion-display .algorithm-demonstration > span,
+.insertion-display .algorithm-animation::after {
+    color: #746394;
+}
+
+.insertion-display .algorithm-animation::before {
+    background-color: #9582c5;
+    box-shadow:
+        -34px 28px 0 #b6a5dc,
+        34px 8px 0 #806bb5,
+        68px -22px 0 #c3b6e5;
+}
+
+/* 5. ALTERNÂNCIA DOS ALGORITMOS
+   O :has() permite alternar os painéis conforme o radio selecionado,
+   sem depender de JavaScript adicional. */
+#insertion-info,
+#insertion-display {
+    display: none;
+}
+
+.visualizer-content:has(#insertion:checked) #bubble-info,
+.visualizer-content:has(#insertion:checked) #bubble-display {
+    display: none;
+}
+
+.visualizer-content:has(#insertion:checked) #insertion-info,
+.visualizer-content:has(#insertion:checked) #insertion-display {
+    display: block;
+}
+
+/* O atributo hidden do HTML é mantido como fallback inicial.
+   Quando Insertion Sort é selecionado, estes seletores o reexibem. */
+.visualizer-content:has(#insertion:checked) #insertion-info[hidden],
+.visualizer-content:has(#insertion:checked) #insertion-display[hidden] {
+    display: block !important;
+}
+
+/* 6. RESPONSIVIDADE */
+@media (max-width: 767.98px) {
+    .visualizer-hero {
+        padding: 40px 0 30px;
+    }
+
+    .visualizer-content {
+        padding-top: 22px;
+    }
+
+    .visualizer-sidebar {
+        padding: 22px;
+    }
+
+    .algorithm-complexity {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .algorithm-display {
+        min-height: auto;
+        padding: 22px;
+    }
+
+    .algorithm-demonstration {
+        min-height: 320px;
+    }
+
+    .algorithm-animation {
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .visualizer-hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .visualizer-hero p {
+        font-size: 1rem;
+    }
+
+    .algorithm-complexity {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .algorithm-demonstration {
+        min-height: 270px;
+        padding: 18px;
+    }
+
+    .algorithm-animation {
+        min-height: 185px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .algorithm-option {
+        transition: none;
+    }
+}
+
+
+/* ==========================================
+   AJUSTES DE RODAPÉ E LARGURA DA PÁGINA
+   Mantém o rodapé consistente com as referências visuais.
+========================================== */
+footer.footer {
+    padding-top: 36px;
+    background-color: #493a32;
+    color: var(--color-cream);
+}
+
+footer.footer > .footer-content {
+    width: auto;
+    margin-inline: 0;
+}
+
+footer.footer a,
+footer.footer p,
+footer.footer h2,
+footer.footer h3 {
+    color: var(--color-cream);
+}
+
+footer.footer .footer-navigation a:hover {
+    color: var(--color-mint);
+}
+
+footer.footer .footer-bottom {
+    border-top-color: rgb(250 247 242 / 25%);
+}
+
+@media (max-width: 767.98px) {
+    footer.footer > .footer-content {
+        row-gap: 1.5rem;
+    }
+}
