@@ -1,0 +1,37 @@
+
+/* ==========================================
+   1. HERO — APRESENTAÇÃO INICIAL
+========================================== */
+
+/* Estilização do link */
+.hero-link {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* ==========================================
+   2. ALGORITMOS EM DESTAQUE
+========================================== */
+
+/* Card do Bubble Sort */
+.algorithm-card-bubble {
+    background-color: var(--color-pink);
+}
+
+/* Card do Insertion Sort */
+.algorithm-card-insertion {
+    background-color: var(--color-lilac);
+}
+
+
+/* ==========================================
+   3. APRESENTAÇÃO DA PLATAFORMA
+========================================== */
+
+/* Card explicativo sobre o funcionamento da plataforma */
+.about-card {
+    background-color: var(--color-peach);
+}
