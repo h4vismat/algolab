@@ -1,62 +1,37 @@
 
 /* ==========================================
-   1. CONFIGURAÇÕES DA PÁGINA
+   1. HERO
 ========================================== */
 
-main {
-    background-color: var(--color-cream);
+.algorithms-hero h1 {
     color: #40352f;
+    font-size: clamp(2.7rem, 5vw, 4.5rem);
+    font-weight: 800;
 }
 
-/* ==========================================
-   2. HERO — APRESENTAÇÃO DA PÁGINA
-========================================== */
-
-.algorithms-hero {
-    padding: clamp(48px, 7vw, 96px) 0;
-    background-color: var(--color-cream);
+.algorithms-hero p {
+    color: #71665e;
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.7;
 }
 
-.algorithms-hero .row {
-    row-gap: 32px;
-}
-
-.algorithms-hero .col-md-7 > span {
-    display: inline-block;
-    margin-bottom: 18px;
+.algorithms-hero span,
+.algorithms-comparison span {
     color: #82766c;
     font-size: 0.9rem;
     font-weight: 800;
     letter-spacing: 0.08em;
 }
 
-.algorithms-hero h1 {
-    margin-bottom: 20px;
-    color: #40352f;
-    font-size: clamp(2.7rem, 5vw, 4.5rem);
-    font-weight: 800;
-    line-height: 1.08;
-}
+/* Ilustração */
 
-.algorithms-hero p {
-    max-width: 620px;
-    margin-bottom: 0;
-    color: #71665e;
-    font-size: clamp(1.05rem, 1.7vw, 1.35rem);
-    font-weight: 600;
-    line-height: 1.7;
-}
-
-/* Ilustração construída em CSS, sem precisar de imagem externa */
 .algorithms-hero-illustration {
     position: relative;
-    display: flex;
     min-height: 300px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
     border-radius: 36px;
     background-color: #eee8dc;
+    overflow: hidden;
 }
 
 .algorithms-hero-illustration::before {
@@ -70,40 +45,46 @@ main {
     background-color: var(--color-mint);
     transform: translateX(-82px);
     box-shadow:
-        42px -48px 0 0 var(--color-lilac),
-        84px -18px 0 0 var(--color-pink),
-        126px -82px 0 0 var(--color-peach),
-        168px -34px 0 0 var(--color-green);
+        42px -48px 0 var(--color-lilac),
+        84px -18px 0 var(--color-pink),
+        126px -82px 0 var(--color-peach),
+        168px -34px 0 var(--color-green);
 }
 
 .algorithms-hero-illustration::after {
     content: "ORDENAÇÃO";
     position: absolute;
     top: 67%;
+    width: 100%;
     color: #71665e;
-    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-size: 1.3rem;
     font-weight: 800;
+    text-align: center;
 }
 
+
 /* ==========================================
-   3. CATÁLOGO DE ALGORITMOS
+   2. CATÁLOGO
 ========================================== */
 
 .algorithms-catalog {
-    padding: clamp(44px, 6vw, 76px) 0;
     background-color: #f3efe7;
 }
 
-.algorithms-catalog h2 {
-    margin-bottom: 30px;
+.algorithms-catalog h2,
+.algorithm-card h3,
+.algorithms-comparison h2 {
     color: #40352f;
-    font-size: clamp(1.8rem, 3.5vw, 2.7rem);
     font-weight: 800;
 }
 
-/* Estrutura compartilhada dos cards */
+.algorithms-catalog h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+}
+
+/* Cards */
+
 .algorithm-card {
-    margin-bottom: 26px;
     padding: clamp(22px, 3.5vw, 34px);
     border: 0;
     border-radius: 30px;
@@ -114,15 +95,6 @@ main {
 .algorithm-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 28px rgba(64, 53, 47, 0.08);
-}
-
-/* Identificação e numeração */
-.algorithm-card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    margin-bottom: 20px;
 }
 
 .algorithm-card-header span:first-child {
@@ -141,36 +113,36 @@ main {
 }
 
 .algorithm-card h3 {
-    margin-bottom: 20px;
-    color: #40352f;
     font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-    font-weight: 800;
 }
 
 .algorithm-card p {
     max-width: 620px;
-    margin-bottom: 14px;
     color: #51463f;
     font-size: 1.05rem;
     font-weight: 600;
     line-height: 1.65;
 }
 
-.algorithm-card a {
-    display: inline-block;
+.algorithm-card a,
+.algorithms-comparison a {
     color: #40352f;
-    font-size: 1rem;
     font-weight: 800;
     text-decoration: none;
-    transition: color 0.2s ease, transform 0.2s ease;
+    transition: color 0.2s ease;
+}
+
+.algorithm-card a:hover,
+.algorithms-comparison a:hover {
+    color: #28785e;
 }
 
 .algorithm-card a:hover {
-    color: #28785e;
     transform: translateX(4px);
 }
 
-/* Cores individuais dos algoritmos */
+/* Cores dos algoritmos */
+
 .bubble-card {
     background-color: var(--color-mint);
 }
@@ -184,15 +156,13 @@ main {
 }
 
 /* Ilustrações dos cards */
+
 .algorithm-card-illustration {
     position: relative;
-    display: flex;
     min-height: 190px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
     border-radius: 24px;
     background-color: rgba(255, 255, 255, 0.58);
+    overflow: hidden;
 }
 
 .algorithm-card-illustration::before {
@@ -206,121 +176,67 @@ main {
     background-color: #75a895;
     transform: translateX(-65px);
     box-shadow:
-        34px -32px 0 0 #75a895,
-        68px -12px 0 0 #75a895,
-        102px -62px 0 0 #75a895;
+        34px -32px 0 #75a895,
+        68px -12px 0 #75a895,
+        102px -62px 0 #75a895;
 }
 
 .algorithm-card-illustration::after {
     content: "ILUSTRAÇÃO";
     position: absolute;
     top: 75%;
+    width: 100%;
     color: #58796e;
     font-size: 1.05rem;
     font-weight: 800;
+    text-align: center;
 }
 
 .insertion-illustration::before {
     background-color: #9582c5;
     box-shadow:
-        34px -32px 0 0 #9582c5,
-        68px -52px 0 0 #9582c5,
-        102px -82px 0 0 #9582c5;
+        34px -32px 0 #9582c5,
+        68px -52px 0 #9582c5,
+        102px -82px 0 #9582c5;
 }
 
 .insertion-illustration::after {
     color: #746394;
 }
 
+
 /* ==========================================
-   4. CHAMADA PARA COMPLEXIDADE
+   3. CHAMADA PARA COMPLEXIDADE
 ========================================== */
 
 .algorithms-comparison {
-    margin: clamp(36px, 5vw, 64px) auto;
     padding: clamp(28px, 4vw, 42px);
     border-radius: 30px;
     background-color: #eee8dc;
 }
 
-.algorithms-comparison > span {
-    display: inline-block;
-    margin-bottom: 14px;
-    color: #82766c;
-    font-size: 0.9rem;
-    font-weight: 800;
-    letter-spacing: 0.06em;
-}
-
 .algorithms-comparison h2 {
-    margin-bottom: 16px;
-    color: #40352f;
     font-size: clamp(1.6rem, 3vw, 2.2rem);
-    font-weight: 800;
 }
 
 .algorithms-comparison p {
     max-width: 760px;
-    margin-bottom: 18px;
     color: #71665e;
     font-size: 1.05rem;
     font-weight: 600;
     line-height: 1.65;
 }
 
-.algorithms-comparison a {
-    color: #40352f;
-    font-weight: 800;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.algorithms-comparison a:hover {
-    color: #28785e;
-}
 
 /* ==========================================
-   5. RODAPÉ — IDENTIDADE DA REFERÊNCIA
-========================================== */
-
-.footer {
-    padding-top: 36px;
-    background-color: #493a32;
-    color: var(--color-cream);
-}
-
-.footer a,
-.footer p,
-.footer h2,
-.footer h3 {
-    color: var(--color-cream);
-}
-
-.footer-navigation a:hover {
-    color: var(--color-mint);
-}
-
-.footer-bottom {
-    border-top-color: rgba(250, 247, 242, 0.25);
-}
-
-/* ==========================================
-   6. RESPONSIVIDADE
+   4. RESPONSIVIDADE
 ========================================== */
 
 @media (max-width: 767.98px) {
-    .algorithms-hero {
-        padding: 42px 0;
-    }
-
     .algorithms-hero-illustration {
         min-height: 230px;
         max-width: 420px;
         margin-inline: auto;
-    }
-
-    .algorithms-catalog {
-        padding: 42px 0;
     }
 
     .algorithm-card {
@@ -330,12 +246,6 @@ main {
 
     .algorithm-card-illustration {
         min-height: 170px;
-        margin-top: 12px;
-    }
-
-    .algorithms-comparison {
-        margin-block: 32px;
-        padding: 26px;
     }
 }
 
@@ -356,42 +266,5 @@ main {
 
     .algorithm-card-illustration {
         min-height: 155px;
-    }
-}
-
-
-/* ==========================================
-   AJUSTES DE RODAPÉ E LARGURA DA PÁGINA
-   Mantém o rodapé consistente com as referências visuais.
-========================================== */
-footer.footer {
-    padding-top: 36px;
-    background-color: #493a32;
-    color: var(--color-cream);
-}
-
-footer.footer > .footer-content {
-    width: auto;
-    margin-inline: 0;
-}
-
-footer.footer a,
-footer.footer p,
-footer.footer h2,
-footer.footer h3 {
-    color: var(--color-cream);
-}
-
-footer.footer .footer-navigation a:hover {
-    color: var(--color-mint);
-}
-
-footer.footer .footer-bottom {
-    border-top-color: rgb(250 247 242 / 25%);
-}
-
-@media (max-width: 767.98px) {
-    footer.footer > .footer-content {
-        row-gap: 1.5rem;
     }
 }

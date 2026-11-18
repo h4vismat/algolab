@@ -1,11 +1,16 @@
+
 /* ==========================================
    ALGOLAB — PÁGINA DE COMPLEXIDADE
    Estilos exclusivos de complexidade.html
 ========================================== */
 
-/* 1. BASE */
+
+/* ==========================================
+   1. BASE
+========================================== */
+
 main {
-    color: #40352f;
+    color: black;
     background-color: var(--color-cream);
 }
 
@@ -23,7 +28,11 @@ main {
     max-width: 1140px;
 }
 
-/* 2. HERO E DESTAQUE BIG O */
+
+/* ==========================================
+   2. HERO E DESTAQUE BIG O
+========================================== */
+
 .complexity-hero {
     padding-top: clamp(48px, 7vw, 88px);
     background-color: var(--color-cream);
@@ -35,7 +44,7 @@ main {
 .complexity-algorithms .container:first-child > span {
     display: inline-block;
     margin-bottom: 14px;
-    color: #82766c;
+    color: black;
     font-size: 0.88rem;
     font-weight: 800;
     letter-spacing: 0.04em;
@@ -44,7 +53,7 @@ main {
 .complexity-hero h1 {
     max-width: 850px;
     margin: 0 0 16px;
-    color: #40352f;
+    color: black;
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 800;
     line-height: 1.1;
@@ -53,7 +62,7 @@ main {
 .complexity-hero .container:first-child p {
     max-width: 820px;
     margin: 0;
-    color: #71665e;
+    color: black;
     font-size: clamp(1.05rem, 1.8vw, 1.25rem);
     font-weight: 600;
     line-height: 1.65;
@@ -69,7 +78,7 @@ main {
 .complexity-hero .container:nth-child(2) > span {
     display: inline-block;
     margin-bottom: 10px;
-    color: #746394;
+    color: black;
     font-size: 0.85rem;
     font-weight: 800;
     letter-spacing: 0.04em;
@@ -77,7 +86,7 @@ main {
 
 .complexity-hero h2 {
     margin: 0 0 10px;
-    color: #40352f;
+    color: black;
     font-size: clamp(2rem, 3.5vw, 2.8rem);
     font-weight: 800;
 }
@@ -85,22 +94,26 @@ main {
 .complexity-hero .container:nth-child(2) p {
     max-width: 800px;
     margin: 0;
-    color: #51463f;
+    color: black;
     font-size: 1.05rem;
     font-weight: 600;
     line-height: 1.65;
 }
 
-/* 3. INTRODUÇÃO — TEMPO E ESPAÇO */
+
+/* ==========================================
+   3. INTRODUÇÃO — TEMPO E ESPAÇO
+========================================== */
+
 .complexity-intro {
-    background-color: #f3efe7;
+    background-color: var(--color-cream);
 }
 
 .complexity-intro h2,
 .complexity-classes h2,
 .complexity-algorithms h2 {
     margin: 0 0 14px;
-    color: #40352f;
+    color: black;
     font-size: clamp(1.8rem, 3.5vw, 2.55rem);
     font-weight: 800;
     line-height: 1.15;
@@ -111,7 +124,7 @@ main {
 .complexity-algorithms .container:first-child p {
     max-width: 850px;
     margin: 0;
-    color: #71665e;
+    color: black;
     font-size: 1.05rem;
     font-weight: 600;
     line-height: 1.7;
@@ -150,19 +163,23 @@ main {
 
 .complexity-intro article h3 {
     margin: 0 0 10px;
-    color: #40352f;
+    color: black;
     font-size: clamp(1.5rem, 2.6vw, 2rem);
     font-weight: 800;
 }
 
 .complexity-intro article p {
     margin: 0;
-    color: #51463f;
+    color: black;
     font-weight: 600;
     line-height: 1.65;
 }
 
-/* 4. CLASSES DE COMPLEXIDADE */
+
+/* ==========================================
+   4. CLASSES DE COMPLEXIDADE
+========================================== */
+
 .complexity-classes {
     background-color: var(--color-cream);
 }
@@ -213,38 +230,42 @@ main {
 }
 
 .complexity-classes .row:nth-child(3) > article:first-of-type {
-    background-color: #e8d8c8;
+    background-color: var(--color-green);
 }
 
 .complexity-classes .row:nth-child(3) > article:last-of-type {
-    background-color: #d8cbbd;
+    background-color: var(--color-peach);
 }
 
 .complexity-classes article h3 {
     margin: 0 0 8px;
-    color: #40352f;
+    color: black;
     font-size: clamp(1.9rem, 3.5vw, 2.6rem);
     font-weight: 800;
 }
 
 .complexity-classes article p {
     margin: 0 0 8px;
-    color: #40352f;
+    color: black;
     font-size: 1.05rem;
     font-weight: 800;
 }
 
 .complexity-classes article span {
     display: block;
-    color: #51463f;
+    color: black;
     font-size: 0.92rem;
     font-weight: 600;
     line-height: 1.5;
 }
 
-/* 5. COMPARAÇÃO DOS ALGORITMOS */
+
+/* ==========================================
+   5. COMPARAÇÃO DOS ALGORITMOS
+========================================== */
+
 .complexity-algorithms {
-    background-color: #f3efe7;
+    background-color: var(--color-cream);
 }
 
 .complexity-algorithms > .container:nth-child(2) {
@@ -257,14 +278,14 @@ main {
     border-collapse: separate;
     border-spacing: 0;
     border-radius: 18px;
-    background-color: #eee8dc;
-    color: #40352f;
+    background-color: var(--color-cream);
+    color: black;
 }
 
 .complexity-table th,
 .complexity-table td {
     padding: 17px 20px;
-    border-bottom: 1px solid rgb(64 53 47 / 12%);
+    border-bottom: 1px solid rgb(0 0 0 / 12%);
     text-align: left;
     vertical-align: middle;
 }
@@ -300,14 +321,18 @@ main {
     margin: 0;
     padding: 20px 22px;
     border-radius: 18px;
-    background-color: #eee8dc;
-    color: #71665e;
+    background-color: var(--color-peach);
+    color: black;
     font-size: 0.98rem;
     font-weight: 600;
     line-height: 1.65;
 }
 
-/* 6. RESPONSIVIDADE */
+
+/* ==========================================
+   6. RESPONSIVIDADE
+========================================== */
+
 @media (max-width: 767.98px) {
     .complexity-intro .row > article,
     .complexity-classes .row > article {
@@ -374,42 +399,5 @@ main {
     .complexity-table td {
         padding: 14px 16px;
         font-size: 0.9rem;
-    }
-}
-
-
-/* ==========================================
-   AJUSTES DE RODAPÉ E LARGURA DA PÁGINA
-   Mantém o rodapé consistente com as referências visuais.
-========================================== */
-footer.footer {
-    padding-top: 36px;
-    background-color: #493a32;
-    color: var(--color-cream);
-}
-
-footer.footer > .footer-content {
-    width: auto;
-    margin-inline: 0;
-}
-
-footer.footer a,
-footer.footer p,
-footer.footer h2,
-footer.footer h3 {
-    color: var(--color-cream);
-}
-
-footer.footer .footer-navigation a:hover {
-    color: var(--color-mint);
-}
-
-footer.footer .footer-bottom {
-    border-top-color: rgb(250 247 242 / 25%);
-}
-
-@media (max-width: 767.98px) {
-    footer.footer > .footer-content {
-        row-gap: 1.5rem;
     }
 }
