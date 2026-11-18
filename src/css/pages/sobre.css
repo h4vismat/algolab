@@ -1,11 +1,16 @@
+
 /* ==========================================
    ALGOLAB — PÁGINA SOBRE
    Estilos exclusivos de sobre.html
 ========================================== */
 
-/* 1. BASE */
+
+/* ==========================================
+   1. BASE
+========================================== */
+
 main {
-    color: #40352f;
+    color: black;
     background-color: var(--color-cream);
 }
 
@@ -14,7 +19,7 @@ main {
 .about-purpose,
 .about-team,
 .about-technologies {
-    color: #40352f;
+    color: black;
 }
 
 .about-hero .container,
@@ -25,7 +30,11 @@ main {
     max-width: 1140px;
 }
 
-/* 2. APRESENTAÇÃO */
+
+/* ==========================================
+   2. APRESENTAÇÃO
+========================================== */
+
 .about-hero {
     padding: clamp(52px, 7vw, 90px) 0 clamp(38px, 5vw, 58px);
     background-color: var(--color-cream);
@@ -37,7 +46,7 @@ main {
 .about-technologies > .container > span {
     display: inline-block;
     margin-bottom: 14px;
-    color: #82766c;
+    color: black;
     font-size: 0.88rem;
     font-weight: 800;
     letter-spacing: 0.04em;
@@ -46,7 +55,7 @@ main {
 .about-hero h1 {
     max-width: 850px;
     margin: 0 0 16px;
-    color: #40352f;
+    color: black;
     font-size: clamp(2.6rem, 5vw, 4.1rem);
     font-weight: 800;
     line-height: 1.1;
@@ -55,7 +64,7 @@ main {
 .about-hero p {
     max-width: 780px;
     margin: 0 0 22px;
-    color: #71665e;
+    color: black;
     font-size: clamp(1.05rem, 1.8vw, 1.3rem);
     font-weight: 600;
     line-height: 1.65;
@@ -66,7 +75,7 @@ main {
     padding: 12px 20px;
     border-radius: 30px;
     background-color: var(--color-mint);
-    color: #40352f;
+    color: black;
     font-size: 0.9rem;
     font-weight: 800;
     text-decoration: none;
@@ -79,11 +88,15 @@ main {
 }
 
 .about-hero a:focus-visible {
-    outline: 3px solid #398b70;
+    outline: 3px solid black;
     outline-offset: 4px;
 }
 
-/* 3. APRESENTAÇÃO DO PROJETO */
+
+/* ==========================================
+   3. APRESENTAÇÃO DO PROJETO
+========================================== */
+
 .about-project {
     padding: 26px 0;
     background-color: var(--color-cream);
@@ -92,14 +105,14 @@ main {
 .about-project .container {
     padding: clamp(24px, 4vw, 38px);
     border-radius: 26px;
-    background-color: #eee8dc;
+    background-color: var(--color-mint);
 }
 
 .about-project h2,
 .about-team h2,
 .about-technologies h2 {
     margin: 0 0 12px;
-    color: #40352f;
+    color: black;
     font-size: clamp(1.8rem, 3.5vw, 2.55rem);
     font-weight: 800;
     line-height: 1.15;
@@ -109,13 +122,17 @@ main {
 .about-team > .container > p {
     max-width: 850px;
     margin: 0;
-    color: #71665e;
+    color: black;
     font-size: 1.05rem;
     font-weight: 600;
     line-height: 1.7;
 }
 
-/* 4. MISSÃO E OBJETIVO */
+
+/* ==========================================
+   4. MISSÃO E OBJETIVO
+========================================== */
+
 .about-purpose {
     padding: 22px 0 clamp(42px, 6vw, 70px);
     background-color: var(--color-cream);
@@ -152,7 +169,7 @@ main {
 .about-purpose article span {
     display: inline-block;
     margin-bottom: 12px;
-    color: #51463f;
+    color: black;
     font-size: 0.9rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -160,16 +177,20 @@ main {
 
 .about-purpose article p {
     margin: 0;
-    color: #40352f;
+    color: black;
     font-size: clamp(1.15rem, 2vw, 1.45rem);
     font-weight: 800;
     line-height: 1.45;
 }
 
-/* 5. EQUIPE */
+
+/* ==========================================
+   5. EQUIPE
+========================================== */
+
 .about-team {
     padding: clamp(42px, 6vw, 70px) 0;
-    background-color: #f3efe7;
+    background-color: var(--color-cream);
 }
 
 .about-team > .container > p {
@@ -183,14 +204,14 @@ main {
     margin: 0;
     padding: clamp(22px, 3vw, 30px);
     border-radius: 24px;
-    background-color: #eee8dc;
+    background-color: var(--color-mint);
     list-style: none;
 }
 
 .about-team li {
     position: relative;
     padding-left: 24px;
-    color: #40352f;
+    color: black;
     font-size: 1rem;
     font-weight: 800;
     line-height: 1.5;
@@ -203,11 +224,15 @@ main {
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background-color: var(--color-mint);
+    background-color: var(--color-lilac);
     content: "";
 }
 
-/* 6. TECNOLOGIAS */
+
+/* ==========================================
+   6. TECNOLOGIAS
+========================================== */
+
 .about-technologies {
     padding: clamp(42px, 6vw, 70px) 0;
     background-color: var(--color-cream);
@@ -222,12 +247,13 @@ main {
     width: 100%;
     height: 1px;
     margin-top: 30px;
-    background-color: rgb(64 53 47 / 18%);
+    background-color: rgb(0 0 0 / 18%);
     content: "";
 }
 
-/* O HTML atual ainda não contém os chips de tecnologia.
-   Este bloco prepara o estilo caso sejam adicionados como lista. */
+/* Estilo dos chips de tecnologia, caso
+   sejam adicionados como lista ao HTML */
+
 .about-technologies ul {
     display: flex;
     flex-wrap: wrap;
@@ -240,13 +266,18 @@ main {
 .about-technologies li {
     padding: 12px 16px;
     border-radius: 14px;
-    background-color: #eee8dc;
-    color: #40352f;
+    background-color: var(--color-peach);
+    color: black;
     font-weight: 800;
 }
 
-/* 7. RESPONSIVIDADE */
+
+/* ==========================================
+   7. RESPONSIVIDADE
+========================================== */
+
 @media (max-width: 767.98px) {
+
     .about-purpose .row > article {
         flex: 0 0 100%;
         max-width: 100%;
@@ -275,6 +306,7 @@ main {
 }
 
 @media (max-width: 575.98px) {
+
     .about-hero h1 {
         font-size: 2.45rem;
     }
@@ -296,45 +328,13 @@ main {
     }
 }
 
+
+/* ==========================================
+   8. ACESSIBILIDADE
+========================================== */
+
 @media (prefers-reduced-motion: reduce) {
     .about-hero a {
         transition: none;
-    }
-}
-
-
-/* ==========================================
-   AJUSTES DE RODAPÉ E LARGURA DA PÁGINA
-   Mantém o rodapé consistente com as referências visuais.
-========================================== */
-footer.footer {
-    padding-top: 36px;
-    background-color: #493a32;
-    color: var(--color-cream);
-}
-
-footer.footer > .footer-content {
-    width: auto;
-    margin-inline: 0;
-}
-
-footer.footer a,
-footer.footer p,
-footer.footer h2,
-footer.footer h3 {
-    color: var(--color-cream);
-}
-
-footer.footer .footer-navigation a:hover {
-    color: var(--color-mint);
-}
-
-footer.footer .footer-bottom {
-    border-top-color: rgb(250 247 242 / 25%);
-}
-
-@media (max-width: 767.98px) {
-    footer.footer > .footer-content {
-        row-gap: 1.5rem;
     }
 }

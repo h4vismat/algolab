@@ -1,20 +1,14 @@
+
 /* ==========================================
    ALGOLAB — PÁGINA DO VISUALIZADOR
    Estilos exclusivos de visualizador.html
 ========================================== */
 
-/* 1. BASE DA PÁGINA */
-main {
-    color: #40352f;
-    background-color: var(--color-cream);
-}
 
-.visualizer-hero,
-.visualizer-content {
-    color: #40352f;
-}
+/* ==========================================
+   1. APRESENTAÇÃO
+========================================== */
 
-/* 2. APRESENTAÇÃO */
 .visualizer-hero {
     padding: clamp(44px, 6vw, 76px) 0 38px;
     background-color: var(--color-cream);
@@ -30,8 +24,7 @@ main {
     margin-bottom: 16px;
     padding: 8px 16px;
     border-radius: 30px;
-    background-color: var(--color-mint);
-    color: #398b70;
+    color: black;
     font-size: 0.85rem;
     font-weight: 800;
     letter-spacing: 0.04em;
@@ -39,7 +32,7 @@ main {
 
 .visualizer-hero h1 {
     margin: 0 0 16px;
-    color: #40352f;
+    color: black;
     font-size: clamp(2.6rem, 5vw, 4rem);
     font-weight: 800;
     line-height: 1.08;
@@ -48,16 +41,20 @@ main {
 .visualizer-hero p {
     max-width: 760px;
     margin: 0;
-    color: #71665e;
+    color: black;
     font-size: clamp(1.05rem, 1.8vw, 1.25rem);
     font-weight: 600;
     line-height: 1.65;
 }
 
-/* 3. ÁREA DO VISUALIZADOR */
+
+/* ==========================================
+   2. ÁREA DO VISUALIZADOR
+========================================== */
+
 .visualizer-content {
     padding: 28px 0 clamp(48px, 6vw, 76px);
-    background-color: #f3efe7;
+    background-color: var(--color-cream);
 }
 
 .visualizer-content > .container > .row {
@@ -66,17 +63,19 @@ main {
     align-items: stretch;
 }
 
+
 /* Painel lateral */
+
 .visualizer-sidebar {
     height: 100%;
     padding: clamp(20px, 2.5vw, 28px);
     border-radius: 26px;
-    background-color: #eee8dc;
+    background-color: var(--color-peach);
 }
 
 .visualizer-sidebar h2 {
     margin: 0 0 20px;
-    color: #40352f;
+    color: black;
     font-size: clamp(1.25rem, 2vw, 1.55rem);
     font-weight: 800;
     line-height: 1.25;
@@ -87,14 +86,14 @@ main {
     margin: 0;
     padding: 0 0 22px;
     border: 0;
-    border-bottom: 1px solid rgb(64 53 47 / 16%);
+    border-bottom: 1px solid rgb(0 0 0 / 16%);
 }
 
 .algorithm-selection legend {
     float: none;
     width: auto;
     margin-bottom: 14px;
-    color: #71665e;
+    color: black;
     font-size: 0.82rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -121,11 +120,11 @@ main {
     height: 18px;
     flex: 0 0 auto;
     margin: 0;
-    accent-color: #398b70;
+    accent-color: var(--color-green);
 }
 
 .algorithm-option label {
-    color: #40352f;
+    color: black;
     font-size: 0.98rem;
     font-weight: 800;
     cursor: pointer;
@@ -140,9 +139,12 @@ main {
 }
 
 .algorithm-option input:focus-visible {
-    outline: 3px solid #40352f;
+    outline: 3px solid black;
     outline-offset: 3px;
 }
+
+
+/* Informações dos algoritmos */
 
 #bubble-info,
 #insertion-info {
@@ -152,7 +154,7 @@ main {
 #bubble-info h3,
 #insertion-info h3 {
     margin: 0 0 12px;
-    color: #40352f;
+    color: black;
     font-size: 1.15rem;
     font-weight: 800;
 }
@@ -160,13 +162,15 @@ main {
 #bubble-info > p,
 #insertion-info > p {
     margin: 0 0 18px;
-    color: #71665e;
+    color: black;
     font-size: 0.95rem;
     font-weight: 600;
     line-height: 1.65;
 }
 
+
 /* Cartões de complexidade da barra lateral */
+
 .algorithm-complexity {
     display: grid;
     grid-template-columns: 1fr;
@@ -180,13 +184,13 @@ main {
 
 .complexity-item p {
     margin: 0 0 5px;
-    color: #40352f;
+    color: black;
     font-size: 0.9rem;
     font-weight: 700;
 }
 
 .complexity-item span {
-    color: #40352f;
+    color: black;
     font-size: 1.35rem;
     font-weight: 800;
 }
@@ -199,7 +203,11 @@ main {
     background-color: var(--color-pink);
 }
 
-/* 4. PAINEL DE DEMONSTRAÇÃO */
+
+/* ==========================================
+   3. PAINEL DE DEMONSTRAÇÃO
+========================================== */
+
 .algorithm-display {
     min-height: 100%;
     padding: clamp(22px, 3vw, 34px);
@@ -209,7 +217,7 @@ main {
 
 .algorithm-display h2 {
     margin: 0 0 22px;
-    color: #40352f;
+    color: black;
     font-size: clamp(1.45rem, 2.6vw, 2rem);
     font-weight: 800;
     line-height: 1.2;
@@ -225,14 +233,15 @@ main {
 .algorithm-demonstration > span {
     display: block;
     margin-bottom: 24px;
-    color: #58796e;
+    color: black;
     font-size: 1rem;
     font-weight: 800;
     text-transform: uppercase;
 }
 
-/* Os GIFs citados no HTML não estão presentes no ZIP.
-   Esta área mantém uma representação visual sem exibir ícone quebrado. */
+
+/* Exibição dos GIFs dos algoritmos */
+
 .algorithm-animation {
     position: relative;
     display: flex;
@@ -242,28 +251,17 @@ main {
     overflow: hidden;
 }
 
-.algorithm-animation::before {
-    width: 22px;
-    height: 100px;
-    border-radius: 8px;
-    background-color: #e9b8bf;
-    box-shadow:
-        -34px 28px 0 var(--color-peach),
-        34px 8px 0 var(--color-lilac),
-        68px -22px 0 var(--color-peach);
-    content: "";
-    transform: translateX(-17px);
+.algorithm-animation img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 280px;
+    height: auto;
+    object-fit: contain;
 }
 
-.algorithm-animation::after {
-    position: absolute;
-    bottom: 14px;
-    color: #58796e;
-    content: "Representação visual estática";
-    font-size: 0.9rem;
-    font-weight: 800;
-    text-align: center;
-}
+
+/* Aparência específica do Insertion Sort */
 
 .insertion-display {
     background-color: var(--color-lilac);
@@ -273,46 +271,13 @@ main {
     background-color: rgb(255 255 255 / 62%);
 }
 
-.insertion-display .algorithm-demonstration > span,
-.insertion-display .algorithm-animation::after {
-    color: #746394;
-}
 
-.insertion-display .algorithm-animation::before {
-    background-color: #9582c5;
-    box-shadow:
-        -34px 28px 0 #b6a5dc,
-        34px 8px 0 #806bb5,
-        68px -22px 0 #c3b6e5;
-}
+/* ==========================================
+   4. RESPONSIVIDADE
+========================================== */
 
-/* 5. ALTERNÂNCIA DOS ALGORITMOS
-   O :has() permite alternar os painéis conforme o radio selecionado,
-   sem depender de JavaScript adicional. */
-#insertion-info,
-#insertion-display {
-    display: none;
-}
-
-.visualizer-content:has(#insertion:checked) #bubble-info,
-.visualizer-content:has(#insertion:checked) #bubble-display {
-    display: none;
-}
-
-.visualizer-content:has(#insertion:checked) #insertion-info,
-.visualizer-content:has(#insertion:checked) #insertion-display {
-    display: block;
-}
-
-/* O atributo hidden do HTML é mantido como fallback inicial.
-   Quando Insertion Sort é selecionado, estes seletores o reexibem. */
-.visualizer-content:has(#insertion:checked) #insertion-info[hidden],
-.visualizer-content:has(#insertion:checked) #insertion-display[hidden] {
-    display: block !important;
-}
-
-/* 6. RESPONSIVIDADE */
 @media (max-width: 767.98px) {
+
     .visualizer-hero {
         padding: 40px 0 30px;
     }
@@ -341,9 +306,14 @@ main {
     .algorithm-animation {
         min-height: 220px;
     }
+
+    .algorithm-animation img {
+        max-height: 200px;
+    }
 }
 
 @media (max-width: 575.98px) {
+
     .visualizer-hero h1 {
         font-size: 2.4rem;
     }
@@ -364,47 +334,19 @@ main {
     .algorithm-animation {
         min-height: 185px;
     }
-}
 
-@media (prefers-reduced-motion: reduce) {
-    .algorithm-option {
-        transition: none;
+    .algorithm-animation img {
+        max-height: 165px;
     }
 }
 
 
 /* ==========================================
-   AJUSTES DE RODAPÉ E LARGURA DA PÁGINA
-   Mantém o rodapé consistente com as referências visuais.
+   5. ACESSIBILIDADE
 ========================================== */
-footer.footer {
-    padding-top: 36px;
-    background-color: #493a32;
-    color: var(--color-cream);
-}
 
-footer.footer > .footer-content {
-    width: auto;
-    margin-inline: 0;
-}
-
-footer.footer a,
-footer.footer p,
-footer.footer h2,
-footer.footer h3 {
-    color: var(--color-cream);
-}
-
-footer.footer .footer-navigation a:hover {
-    color: var(--color-mint);
-}
-
-footer.footer .footer-bottom {
-    border-top-color: rgb(250 247 242 / 25%);
-}
-
-@media (max-width: 767.98px) {
-    footer.footer > .footer-content {
-        row-gap: 1.5rem;
+@media (prefers-reduced-motion: reduce) {
+    .algorithm-option {
+        transition: none;
     }
 }

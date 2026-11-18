@@ -1,71 +1,48 @@
+
 <!doctype html>
 <html lang="pt-BR">
 
 <head>
-  <!-- ==========================================
-       1. CONFIGURAÇÕES DO DOCUMENTO
-  =========================================== -->
+  <!-- CONFIGURAÇÕES -->
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>AlgoLab | Algoritmos</title>
 
-  <!-- Favicon -->
-  <link
-    rel="icon"
-    type="image/svg+xml"
-    href="src/assets/images/algolab-favicon.svg"
-  />
+  <link rel="icon" type="image/svg+xml" href="src/assets/images/algolab-favicon.svg" />
 
-  <!-- Fonte principal -->
+  <!-- FONTES E BIBLIOTECAS -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Biblioteca de ícones Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-  <!-- CSS próprio do projeto -->
+  <!-- CSS DO PROJETO -->
+
   <link rel="stylesheet" href="src/css/base.css" />
   <link rel="stylesheet" href="src/css/layout.css" />
   <link rel="stylesheet" href="src/css/components.css" />
-
-  <!-- CSS específico da página -->
   <link rel="stylesheet" href="src/css/pages/algoritmos.css" />
 
 </head>
 
 <body>
 
-  <!-- ==========================================
-       2. CABEÇALHO E NAVEGAÇÃO PRINCIPAL
-  =========================================== -->
+  <!-- 1. HEADER -->
 
   <header>
-    <nav
-      aria-label="Navegação principal"
-      class="d-flex justify-content-between align-items-center px-5"
-    >
+    <nav aria-label="Navegação principal"
+         class="d-flex justify-content-between align-items-center px-5">
 
-      <!-- Logo do projeto -->
       <div>
         <img src="src/assets/images/algolab-logo.svg" alt="Logo AlgoLab" />
       </div>
 
-      <!-- Links de navegação -->
       <ul class="d-flex align-items-center gap-4 list-unstyled mb-0">
         <li><a href="index.html">Início</a></li>
         <li><a href="algoritmos.html" aria-current="page">Algoritmos</a></li>
@@ -78,37 +55,33 @@
   </header>
 
 
-  <!-- ==========================================
-       3. CONTEÚDO PRINCIPAL
-  =========================================== -->
+  <!-- 2. CONTEÚDO PRINCIPAL -->
 
   <main>
 
-    <!-- ==========================================
-         3.1. APRESENTAÇÃO DA PÁGINA
-    =========================================== -->
+    <!-- 2.1 HERO -->
 
-    <section class="algorithms-hero">
+    <section class="algorithms-hero py-5">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center g-4">
 
-          <!-- Texto de apresentação -->
           <div class="col-md-7">
-            <span>BIBLIOTECA DE ALGORITMOS</span>
 
-            <h1>Algoritmos.</h1>
+            <span class="d-inline-block mb-3">
+              BIBLIOTECA DE ALGORITMOS
+            </span>
 
-            <p>
+            <h1 class="mb-3">Algoritmos.</h1>
+
+            <p class="mb-0">
               Explore os métodos de ordenação e compreenda como cada
               algoritmo organiza um conjunto de dados.
             </p>
+
           </div>
 
-          <!-- Ilustração da seção -->
           <div class="col-md-5">
-            <div class="algorithms-hero-illustration">
-              <!-- Espaço reservado para ilustração -->
-            </div>
+            <div class="algorithms-hero-illustration"></div>
           </div>
 
         </div>
@@ -116,31 +89,29 @@
     </section>
 
 
-    <!-- ==========================================
-         3.2. CATÁLOGO DE ALGORITMOS
-    =========================================== -->
+    <!-- 2.2 CATÁLOGO -->
 
-    <section class="algorithms-catalog">
+    <section class="algorithms-catalog py-5">
       <div class="container">
 
-        <h2>Algoritmos disponíveis</h2>
+        <h2 class="mb-4">Algoritmos disponíveis</h2>
 
-        <!-- Card do Bubble Sort -->
-        <article class="algorithm-card bubble-card">
+        <!-- BUBBLE SORT -->
 
-          <!-- Identificação e numeração do algoritmo -->
-          <div class="algorithm-card-header">
+        <article class="algorithm-card bubble-card mb-4">
+
+          <div class="algorithm-card-header d-flex justify-content-between align-items-center gap-3 mb-4">
             <span>ORDENAÇÃO</span>
             <span>01</span>
           </div>
 
-          <h3>Bubble Sort</h3>
+          <h3 class="mb-3">Bubble Sort</h3>
 
-          <div class="row align-items-center">
+          <div class="row align-items-center g-4">
 
-            <!-- Descrição e acesso ao visualizador -->
             <div class="col-md-7">
-              <p>
+
+              <p class="mb-3">
                 O Bubble Sort é um algoritmo de ordenação que compara
                 elementos vizinhos e realiza trocas quando estão fora de
                 ordem. A cada passagem, o maior elemento restante é
@@ -150,35 +121,33 @@
               <a href="visualizador.html?algoritmo=bubble">
                 Ver detalhes →
               </a>
+
             </div>
 
-            <!-- Ilustração do Bubble Sort -->
             <div class="col-md-5">
-              <div class="algorithm-card-illustration bubble-illustration">
-                <!-- Espaço reservado para ilustração -->
-              </div>
+              <div class="algorithm-card-illustration bubble-illustration"></div>
             </div>
 
           </div>
         </article>
 
 
-        <!-- Card do Insertion Sort -->
+        <!-- INSERTION SORT -->
+
         <article class="algorithm-card insertion-card">
 
-          <!-- Identificação e numeração do algoritmo -->
-          <div class="algorithm-card-header">
+          <div class="algorithm-card-header d-flex justify-content-between align-items-center gap-3 mb-4">
             <span>ORDENAÇÃO</span>
             <span>02</span>
           </div>
 
-          <h3>Insertion Sort</h3>
+          <h3 class="mb-3">Insertion Sort</h3>
 
-          <div class="row align-items-center">
+          <div class="row align-items-center g-4">
 
-            <!-- Descrição e acesso ao visualizador -->
             <div class="col-md-7">
-              <p>
+
+              <p class="mb-3">
                 O Insertion Sort organiza os elementos inserindo cada
                 valor em sua posição correta dentro da parte já ordenada
                 do conjunto. Para isso, desloca os elementos maiores
@@ -188,13 +157,11 @@
               <a href="visualizador.html?algoritmo=insertion">
                 Ver detalhes →
               </a>
+
             </div>
 
-            <!-- Ilustração do Insertion Sort -->
             <div class="col-md-5">
-              <div class="algorithm-card-illustration insertion-illustration">
-                <!-- Espaço reservado para ilustração -->
-              </div>
+              <div class="algorithm-card-illustration insertion-illustration"></div>
             </div>
 
           </div>
@@ -204,18 +171,18 @@
     </section>
 
 
-    <!-- ==========================================
-         3.3. CHAMADA PARA A PÁGINA DE COMPLEXIDADE
-    =========================================== -->
+    <!-- 2.3 CHAMADA PARA COMPLEXIDADE -->
 
-    <section class="algorithms-comparison">
+    <section class="algorithms-comparison mx-auto">
       <div class="container">
 
-        <span>CONTINUE EXPLORANDO</span>
+        <span class="d-inline-block mb-3">
+          CONTINUE EXPLORANDO
+        </span>
 
-        <h2>Quer comparar algoritmos?</h2>
+        <h2 class="mb-3">Quer comparar algoritmos?</h2>
 
-        <p>
+        <p class="mb-3">
           Conheça a complexidade de tempo e espaço dos métodos
           apresentados e entenda suas diferenças.
         </p>
@@ -230,19 +197,18 @@
   </main>
 
 
-  <!-- ==========================================
-       4. RODAPÉ
-  =========================================== -->
+  <!-- 3. FOOTER -->
 
   <footer class="footer">
 
     <div class="row g-4 footer-content px-3">
 
-      <!-- Coluna 1: Identidade do projeto -->
+      <!-- IDENTIDADE -->
+
       <div class="col-12 col-md-5 footer-brand">
 
-        <!-- Logo e identificação da plataforma -->
         <div class="d-flex align-items-center gap-2 footer-brand-header">
+
           <img
             src="src/assets/images/algolab-favicon.svg"
             alt="Ícone AlgoLab"
@@ -253,16 +219,15 @@
             <h2>AlgoLab</h2>
             <p>Visualizador de algoritmos</p>
           </div>
+
         </div>
 
-        <!-- Descrição do projeto -->
         <p class="footer-description">
           Uma plataforma acadêmica para aprender algoritmos de ordenação de
           forma visual e interativa.
         </p>
 
-        <!-- Link para acessar os algoritmos -->
-        <div class="btn-algolab rounded-5 p-2 text-center">
+        <div class="btn-algolab">
           <a href="algoritmos.html" class="footer-link">
             Explorar algoritmos →
           </a>
@@ -271,7 +236,8 @@
       </div>
 
 
-      <!-- Coluna 2: Navegação -->
+      <!-- NAVEGAÇÃO -->
+
       <div class="col-12 col-md-3 footer-navigation">
 
         <h3>Navegação</h3>
@@ -289,11 +255,11 @@
       </div>
 
 
-      <!-- Coluna 3: Informações -->
+      <!-- INFORMAÇÕES -->
+
       <div class="col-12 col-md-4 footer-information">
 
-        <!-- Integrantes da equipe -->
-        <div class="footer-team mb-5">
+        <div class="footer-team">
           <h3>Equipe</h3>
 
           <div class="d-flex gap-3">
@@ -302,11 +268,10 @@
           </div>
         </div>
 
-        <!-- Tecnologias utilizadas no projeto -->
         <div class="footer-technologies">
           <h3>Tecnologias</h3>
 
-          <div class="d-flex align-items-center gap-4">
+          <div class="d-flex align-items-center gap-4 footer-tech-icons">
             <i class="fa-brands fa-html5 html-icon" title="HTML5" aria-hidden="true"></i>
             <i class="fa-brands fa-css3-alt css-icon" title="CSS3" aria-hidden="true"></i>
             <i class="fa-brands fa-js javascript-icon" title="JavaScript" aria-hidden="true"></i>
@@ -319,7 +284,8 @@
     </div>
 
 
-    <!-- Copyright e identificação acadêmica -->
+    <!-- COPYRIGHT -->
+
     <div class="footer-bottom">
       <p>&copy; 2026 AlgoLab. Projeto acadêmico.</p>
     </div>
