@@ -144,11 +144,11 @@
 /* Cores dos algoritmos */
 
 .bubble-card {
-    background-color: var(--color-mint);
+    background-color: var(--color-peach);
 }
 
 .insertion-card {
-    background-color: var(--color-lilac);
+    background-color: var(--color-pink);
 }
 
 .insertion-card .algorithm-card-header span:first-child {
