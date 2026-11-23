@@ -1,352 +1,146 @@
-
-/* ==========================================
-   ALGOLAB — PÁGINA DO VISUALIZADOR
-   Estilos exclusivos de visualizador.html
-========================================== */
-
-
-/* ==========================================
-   1. APRESENTAÇÃO
-========================================== */
-
+/* Página do visualizador */
 .visualizer-hero {
-    padding: clamp(44px, 6vw, 76px) 0 38px;
-    background-color: var(--color-cream);
-}
-
-.visualizer-hero .container,
-.visualizer-content > .container {
-    max-width: 1200px;
-}
-
+    padding: clamp(44px, 6vw, 76px) 0 38px; background-color: var(--color-cream); }
+.visualizer-hero .container, .visualizer-content > .container {
+    max-width: 1200px; }
 .visualizer-hero span {
-    display: inline-block;
-    margin-bottom: 16px;
-    padding: 8px 16px;
-    border-radius: 30px;
-    color: black;
-    font-size: 0.85rem;
-    font-weight: 800;
-    letter-spacing: 0.04em;
-}
-
+    display: inline-block; margin-bottom: 16px;
+    padding: 8px 16px; border-radius: 30px;
+    color: black; font-size: 0.85rem;
+    font-weight: 800; letter-spacing: 0.04em; }
 .visualizer-hero h1 {
-    margin: 0 0 16px;
-    color: black;
-    font-size: clamp(2.6rem, 5vw, 4rem);
-    font-weight: 800;
-    line-height: 1.08;
-}
-
+    margin: 0 0 16px; color: black;
+    font-size: clamp(2.6rem, 5vw, 4rem); font-weight: 800;
+    line-height: 1.08; }
 .visualizer-hero p {
-    max-width: 760px;
-    margin: 0;
-    color: black;
-    font-size: clamp(1.05rem, 1.8vw, 1.25rem);
-    font-weight: 600;
-    line-height: 1.65;
-}
-
-
-/* ==========================================
-   2. ÁREA DO VISUALIZADOR
-========================================== */
-
+    max-width: 760px; margin: 0;
+    color: black; font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+    font-weight: 600; line-height: 1.65; }
 .visualizer-content {
-    padding: 28px 0 clamp(48px, 6vw, 76px);
-    background-color: var(--color-cream);
-}
-
+    padding: 28px 0 clamp(48px, 6vw, 76px); background-color: var(--color-cream); }
 .visualizer-content > .container > .row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 1.5rem;
-    align-items: stretch;
-}
-
-
-/* Painel lateral */
-
+    --bs-gutter-x: 1.5rem; --bs-gutter-y: 1.5rem;
+    align-items: stretch; }
 .visualizer-sidebar {
-    height: 100%;
-    padding: clamp(20px, 2.5vw, 28px);
-    border-radius: 26px;
-    background-color: var(--color-peach);
-}
-
+    height: 100%; padding: clamp(20px, 2.5vw, 28px);
+    border-radius: 26px; background-color: var(--color-peach); }
 .visualizer-sidebar h2 {
-    margin: 0 0 20px;
-    color: black;
-    font-size: clamp(1.25rem, 2vw, 1.55rem);
-    font-weight: 800;
-    line-height: 1.25;
-}
-
+    margin: 0 0 20px; color: black;
+    font-size: clamp(1.25rem, 2vw, 1.55rem); font-weight: 800;
+    line-height: 1.25; }
 .algorithm-selection {
-    min-width: 0;
-    margin: 0;
-    padding: 0 0 22px;
-    border: 0;
-    border-bottom: 1px solid rgb(0 0 0 / 16%);
-}
-
+    min-width: 0; margin: 0;
+    padding: 0 0 22px; border: 0;
+    border-bottom: 1px solid rgb(0 0 0 / 16%); }
 .algorithm-selection legend {
-    float: none;
-    width: auto;
-    margin-bottom: 14px;
-    color: black;
-    font-size: 0.82rem;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
+    float: none; width: auto;
+    margin-bottom: 14px; color: black;
+    font-size: 0.82rem; font-weight: 800;
+    text-transform: uppercase; }
 .algorithm-option {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-    padding: 13px 14px;
-    border-radius: 16px;
-    cursor: pointer;
-    transition: filter 180ms ease, transform 180ms ease;
-}
-
+    display: flex; align-items: center;
+    gap: 10px; margin-top: 10px;
+    padding: 13px 14px; border-radius: 16px;
+    cursor: pointer; transition: filter 180ms ease, transform 180ms ease; }
 .algorithm-option:hover {
-    filter: saturate(1.08);
-    transform: translateY(-1px);
-}
-
+    filter: saturate(1.08); transform: translateY(-1px); }
 .algorithm-option input {
-    width: 18px;
-    height: 18px;
-    flex: 0 0 auto;
-    margin: 0;
-    accent-color: var(--color-green);
-}
-
+    width: 18px; height: 18px;
+    flex: 0 0 auto; margin: 0;
+    accent-color: var(--color-green); }
 .algorithm-option label {
-    color: black;
-    font-size: 0.98rem;
-    font-weight: 800;
-    cursor: pointer;
-}
-
+    color: black; font-size: 0.98rem;
+    font-weight: 800; cursor: pointer; }
 .bubble-option {
-    background-color: var(--color-mint);
-}
-
+    background-color: var(--color-mint); }
 .insertion-option {
-    background-color: var(--color-lilac);
-}
-
+    background-color: var(--color-lilac); }
 .algorithm-option input:focus-visible {
-    outline: 3px solid black;
-    outline-offset: 3px;
-}
-
-
-/* Informações dos algoritmos */
-
-#bubble-info,
-#insertion-info {
-    padding-top: 22px;
-}
-
-#bubble-info h3,
-#insertion-info h3 {
-    margin: 0 0 12px;
-    color: black;
-    font-size: 1.15rem;
-    font-weight: 800;
-}
-
-#bubble-info > p,
-#insertion-info > p {
-    margin: 0 0 18px;
-    color: black;
-    font-size: 0.95rem;
-    font-weight: 600;
-    line-height: 1.65;
-}
-
-
-/* Cartões de complexidade da barra lateral */
-
+    outline: 3px solid black; outline-offset: 3px; }
+#bubble-info, #insertion-info {
+    padding-top: 22px; }
+#bubble-info h3, #insertion-info h3 {
+    margin: 0 0 12px; color: black;
+    font-size: 1.15rem; font-weight: 800; }
+#bubble-info > p, #insertion-info > p {
+    margin: 0 0 18px; color: black;
+    font-size: 0.95rem; font-weight: 600;
+    line-height: 1.65; }
 .algorithm-complexity {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
-}
-
+    display: grid; grid-template-columns: 1fr;
+    gap: 12px; }
 .complexity-item {
-    padding: 14px 16px;
-    border-radius: 16px;
-}
-
+    padding: 14px 16px; border-radius: 16px; }
 .complexity-item p {
-    margin: 0 0 5px;
-    color: black;
-    font-size: 0.9rem;
-    font-weight: 700;
-}
-
+    margin: 0 0 5px; color: black;
+    font-size: 0.9rem; font-weight: 700; }
 .complexity-item span {
-    color: black;
-    font-size: 1.35rem;
-    font-weight: 800;
-}
-
+    color: black; font-size: 1.35rem;
+    font-weight: 800; }
 .best-case {
-    background-color: var(--color-peach);
-}
-
+    background-color: var(--color-peach); }
 .average-case {
-    background-color: var(--color-pink);
-}
-
-
-/* ==========================================
-   3. PAINEL DE DEMONSTRAÇÃO
-========================================== */
-
+    background-color: var(--color-pink); }
 .algorithm-display {
-    min-height: 100%;
-    padding: clamp(22px, 3vw, 34px);
-    border-radius: 28px;
-    background-color: var(--color-mint);
-}
-
+    min-height: 100%; padding: clamp(22px, 3vw, 34px);
+    border-radius: 28px; background-color: var(--color-mint); }
 .algorithm-display h2 {
-    margin: 0 0 22px;
-    color: black;
-    font-size: clamp(1.45rem, 2.6vw, 2rem);
-    font-weight: 800;
-    line-height: 1.2;
-}
-
+    margin: 0 0 22px; color: black;
+    font-size: clamp(1.45rem, 2.6vw, 2rem); font-weight: 800;
+    line-height: 1.2; }
 .algorithm-demonstration {
-    min-height: 420px;
-    padding: clamp(20px, 3vw, 32px);
-    border-radius: 22px;
-    background-color: rgb(255 255 255 / 62%);
-}
-
+    min-height: 420px; padding: clamp(20px, 3vw, 32px);
+    border-radius: 22px; background-color: rgb(255 255 255 / 62%); }
 .algorithm-demonstration > span {
-    display: block;
-    margin-bottom: 24px;
-    color: black;
-    font-size: 1rem;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-
-/* Exibição dos GIFs dos algoritmos */
-
+    display: block; margin-bottom: 24px;
+    color: black; font-size: 1rem;
+    font-weight: 800; text-transform: uppercase; }
 .algorithm-animation {
-    position: relative;
-    display: flex;
-    min-height: 300px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
+    position: relative; display: flex;
+    min-height: 300px; align-items: center;
+    justify-content: center; overflow: hidden; }
 .algorithm-animation img {
-    display: block;
-    width: auto;
-    max-width: 100%;
-    max-height: 280px;
-    height: auto;
-    object-fit: contain;
-}
-
-
-/* Aparência específica do Insertion Sort */
-
+    display: block; width: auto;
+    max-width: 100%; max-height: 280px;
+    height: auto; object-fit: contain; }
 .insertion-display {
-    background-color: var(--color-lilac);
-}
-
+    background-color: var(--color-lilac); }
 .insertion-display .algorithm-demonstration {
-    background-color: rgb(255 255 255 / 62%);
-}
-
-
-/* ==========================================
-   4. RESPONSIVIDADE
-========================================== */
-
+    background-color: rgb(255 255 255 / 62%); }
+/* Ajustes para telas menores e acessibilidade */
 @media (max-width: 767.98px) {
-
     .visualizer-hero {
-        padding: 40px 0 30px;
-    }
-
+        padding: 40px 0 30px; }
     .visualizer-content {
-        padding-top: 22px;
-    }
-
+        padding-top: 22px; }
     .visualizer-sidebar {
-        padding: 22px;
-    }
-
+        padding: 22px; }
     .algorithm-complexity {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
+        grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .algorithm-display {
-        min-height: auto;
-        padding: 22px;
-    }
-
+        min-height: auto; padding: 22px; }
     .algorithm-demonstration {
-        min-height: 320px;
-    }
-
+        min-height: 320px; }
     .algorithm-animation {
-        min-height: 220px;
-    }
-
+        min-height: 220px; }
     .algorithm-animation img {
-        max-height: 200px;
-    }
+        max-height: 200px; }
 }
-
 @media (max-width: 575.98px) {
-
     .visualizer-hero h1 {
-        font-size: 2.4rem;
-    }
-
+        font-size: 2.4rem; }
     .visualizer-hero p {
-        font-size: 1rem;
-    }
-
+        font-size: 1rem; }
     .algorithm-complexity {
-        grid-template-columns: 1fr 1fr;
-    }
-
+        grid-template-columns: 1fr 1fr; }
     .algorithm-demonstration {
-        min-height: 270px;
-        padding: 18px;
-    }
-
+        min-height: 270px; padding: 18px; }
     .algorithm-animation {
-        min-height: 185px;
-    }
-
+        min-height: 185px; }
     .algorithm-animation img {
-        max-height: 165px;
-    }
+        max-height: 165px; }
 }
-
-
-/* ==========================================
-   5. ACESSIBILIDADE
-========================================== */
-
 @media (prefers-reduced-motion: reduce) {
     .algorithm-option {
-        transition: none;
-    }
+        transition: none; }
 }
