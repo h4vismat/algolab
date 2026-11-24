@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | AlgoLab</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/layout.css">
+    <link rel="stylesheet" href="src/css/components.css">
+    <link rel="stylesheet" href="src/css/pages/contato.css">
+    <script src="src/js/contato.js" defer></script>
+</head>
+<body class="contact-page">
+    <header>
+        <nav class="contact-nav page-container" aria-label="Navegação principal">
+            <img src="src/assets/images/algolab-logo.svg" alt="Logo AlgoLab">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="algoritmos.html">Algoritmos</a></li>
+                <li><a href="visualizador.html">Visualizador</a></li>
+                <li><a href="complexidade.html">Complexidade</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html" aria-current="page">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-content page-container">
+        <h1>Contato</h1>
+
+        <form class="contact-form" id="contact-form" method="post">
+            <div>
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" autocomplete="name" required>
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            <button class="btn-algolab" type="submit" disabled>Enviar mensagem</button>
+        </form>
+
+        <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-dialog-title">
+            <h2 id="contact-dialog-title">Formulário enviado!</h2>
+            <p>Este envio é uma simulação.</p>
+            <form method="dialog">
+                <button class="btn-algolab" type="submit">Fechar</button>
+            </form>
+        </dialog>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 AlgoLab. Projeto acadêmico.</p>
+        </div>
+    </footer>
+</body>
+</html>

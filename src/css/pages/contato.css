@@ -1,0 +1,104 @@
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    color: #212529;
+}
+
+.contact-nav,
+.contact-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px 24px;
+}
+
+.contact-nav {
+    justify-content: space-between;
+    padding-bottom: 12px;
+}
+
+.contact-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact-content {
+    flex: 1;
+    padding-block: clamp(32px, 6vw, 72px);
+}
+
+.contact-content h1 {
+    width: min(100%, 640px);
+    margin: 0 auto 20px;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.contact-form,
+.contact-dialog {
+    box-sizing: border-box;
+    border-radius: 24px;
+    padding: clamp(20px, 4vw, 36px);
+}
+
+.contact-form {
+    display: grid;
+    gap: 16px;
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: var(--color-peach);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #71665c;
+    border-radius: 12px;
+    background-color: var(--color-cream);
+    color: inherit;
+    font: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-page .btn-algolab {
+    justify-self: start;
+    padding: 12px 20px;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.contact-dialog {
+    width: min(calc(100% - 32px), 400px);
+    border: 0;
+    background-color: var(--color-cream);
+    color: inherit;
+}
+
+.contact-dialog::backdrop {
+    background-color: rgb(0 0 0 / 45%);
+}
+
+.contact-dialog h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
