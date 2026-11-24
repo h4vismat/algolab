@@ -115,27 +115,34 @@
           <h2>Explore nossos algoritmos</h2>
 
           <!-- Organização dos cards com Flexbox do Bootstrap -->
-          <div class="d-flex gap-3">
 
-            <!-- Card do Bubble Sort -->
-            <article class="flex-fill algorithm-card-bubble rounded-4 p-2">
-              <span>01.</span>
+            <div class="d-flex gap-3">
 
-              <h3>Bubble Sort</h3>
+                <!-- Card do Bubble Sort -->
+                <a href="algoritmos.html"
+                  class="flex-fill algorithm-card-bubble rounded-4 p-2">
 
-              <p>Ordenação por comparação.</p>
-            </article>
+                    <span>01.</span>
 
-            <!-- Card do Insertion Sort -->
-            <article class="flex-fill algorithm-card-insertion rounded-4 p-2">
-              <span>02.</span>
+                    <h3>Bubble Sort</h3>
 
-              <h3>Insertion Sort</h3>
+                    <p>Ordenação por comparação.</p>
 
-              <p>Ordenação por inserção.</p>
-            </article>
+                </a>
 
-          </div>
+                <!-- Card do Insertion Sort -->
+                <a href="algoritmos.html"
+                  class="flex-fill algorithm-card-insertion rounded-4 p-2">
+
+                    <span>02.</span>
+
+                    <h3>Insertion Sort</h3>
+
+                    <p>Ordenação por inserção.</p>
+
+                </a>
+
+            </div>
         </div>
 
       </div>
@@ -157,14 +164,184 @@
             Entenda a lógica, acompanhe a execução e descubra a complexidade
             de cada algoritmo.
           </p>
-        </div>
 
+          <!-- Lista expansível -->
+          <div class="how-it-works-list">
+
+              <details class="how-it-works-item">
+                  <summary>01. Conheça os algoritmos</summary>
+                  <p>
+                      Explore os algoritmos Bubble Sort e Insertion Sort
+                      e entenda como cada método organiza os elementos.
+                  </p>
+              </details>
+
+              <details class="how-it-works-item">
+                  <summary>02. Acompanhe as demonstrações</summary>
+                  <p>
+                      Acesse o Visualizador para observar a execução
+                      dos algoritmos por meio de animações.
+                  </p>
+              </details>
+
+              <details class="how-it-works-item">
+                  <summary>03. Controle a reprodução</summary>
+                  <p>
+                      Utilize os controles para iniciar, pausar,
+                      reiniciar e alterar a velocidade das demonstrações.
+                  </p>
+              </details>
+
+              <details class="how-it-works-item">
+                  <summary>04. Entenda a complexidade</summary>
+                  <p>
+                      Consulte as informações sobre o desempenho
+                      dos algoritmos e suas complexidades.
+                  </p>
+              </details>
+
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- ==========================================
+      3.3. RECURSOS DA PLATAFORMA
+    =========================================== -->
+
+  <section class="platform-features">
+      <div class="container-fluid page-container">
+
+          <div class="features-content">
+
+              <h2>Aprenda de diferentes formas</h2>
+
+              <p class="features-description">
+                  Utilize os recursos da plataforma para compreender
+                  os algoritmos de ordenação na prática.
+              </p>
+
+              <div class="row g-3">
+
+                  <!-- Estudar algoritmos -->
+                  <div class="col-12 col-md-4">
+                      <a href="algoritmos.html"
+                        class="feature-card feature-card-algorithms">
+
+                          <i class="fa-solid fa-book-open"></i>
+
+                          <h3>Estude algoritmos</h3>
+
+                          <p>
+                              Conheça os métodos de ordenação
+                              e entenda como funcionam.
+                          </p>
+
+                          <span>Conhecer algoritmos
+                              <i class="fa-solid fa-arrow-right"></i>
+                          </span>
+
+                      </a>
+                  </div>
+
+                  <!-- Conheça o AlgoLab -->
+                  <div class="col-12 col-md-4">
+                      <a href="sobre.html"
+                        class="feature-card feature-card-visualizer">
+
+                          <i class="fa-solid fa-circle-info"></i>
+
+                          <h3>Conheça o AlgoLab</h3>
+
+                          <p>
+                              Descubra a proposta, os objetivos e
+                              quem está por trás do projeto.
+                          </p>
+
+                          <span>
+                              Sobre o projeto
+                              <i class="fa-solid fa-arrow-right"></i>
+                          </span>
+
+                      </a>
+                  </div>
+
+                  <!-- Complexidade -->
+                  <div class="col-12 col-md-4">
+                      <a href="complexidade.html"
+                        class="feature-card feature-card-complexity">
+
+                          <i class="fa-solid fa-chart-column"></i>
+
+                          <h3>Analise complexidades</h3>
+
+                          <p>
+                              Entenda o desempenho e compare
+                              os diferentes cenários.
+                          </p>
+
+                          <span>Ver complexidades
+                              <i class="fa-solid fa-arrow-right"></i>
+                          </span>
+
+                      </a>
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+  </section>
+
+  <!-- ==========================================
+      3.4. CHAMADA PARA O VISUALIZADOR
+  =========================================== -->
+
+  <section class="visualizer-cta">
+
+      <div class="container-fluid page-container">
+
+          <div class="cta-content">
+
+              <div class="cta-text">
+
+                  <span>APRENDA NA PRÁTICA</span>
+
+                  <h2>
+                      Veja os algoritmos em ação.
+                  </h2>
+
+                  <p>
+                      Não fique apenas na teoria. Acompanhe as
+                      animações do Bubble Sort e Insertion Sort,
+                      controle a reprodução e entenda como os
+                      elementos são reorganizados.
+                  </p>
+
+                  <a href="visualizador.html"
+                    class="btn btn-algolab">
+                      Explorar Visualizador
+                      <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+
+              </div>
+
+              <div class="cta-icon">
+                  <i class="fa-solid fa-play"></i>
+              </div>
+
+          </div>
+
+      </div>
+
+  </section>
 
   </main>
 
 
+
+  
   <!-- ==========================================
        4. RODAPÉ
   =========================================== -->
@@ -266,7 +443,12 @@
   =========================================== -->
 
   <!-- Bootstrap JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
 
+
+
+  </script>
+
+  
 </body>
 </html>

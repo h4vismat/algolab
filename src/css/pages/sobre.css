@@ -1,18 +1,14 @@
 
 /* ==========================================
-   ALGOLAB — PÁGINA SOBRE
-   Estilos exclusivos de sobre.html
-========================================== */
-
-
-/* ==========================================
-   1. BASE
+   ALGOLAB — PÁGINA SOBRE O PROJETO
 ========================================== */
 
 main {
     color: black;
     background-color: var(--color-cream);
 }
+
+/* CONFIGURAÇÕES GERAIS */
 
 .about-hero,
 .about-project,
@@ -30,9 +26,8 @@ main {
     max-width: 1140px;
 }
 
-
 /* ==========================================
-   2. APRESENTAÇÃO
+   01 — APRESENTAÇÃO
 ========================================== */
 
 .about-hero {
@@ -42,7 +37,7 @@ main {
 
 .about-hero span,
 .about-project span,
-.about-team > .container > span,
+.about-team .section-label,
 .about-technologies > .container > span {
     display: inline-block;
     margin-bottom: 14px;
@@ -79,7 +74,10 @@ main {
     font-size: 0.9rem;
     font-weight: 800;
     text-decoration: none;
-    transition: background-color 180ms ease, transform 180ms ease;
+
+    transition:
+        background-color 180ms ease,
+        transform 180ms ease;
 }
 
 .about-hero a:hover {
@@ -92,9 +90,8 @@ main {
     outline-offset: 4px;
 }
 
-
 /* ==========================================
-   3. APRESENTAÇÃO DO PROJETO
+   02 — SOBRE O PROJETO
 ========================================== */
 
 .about-project {
@@ -119,7 +116,7 @@ main {
 }
 
 .about-project p,
-.about-team > .container > p {
+.about-team .team-heading > p {
     max-width: 850px;
     margin: 0;
     color: black;
@@ -128,9 +125,8 @@ main {
     line-height: 1.7;
 }
 
-
 /* ==========================================
-   4. MISSÃO E OBJETIVO
+   03 — NOSSA PROPOSTA
 ========================================== */
 
 .about-purpose {
@@ -183,9 +179,8 @@ main {
     line-height: 1.45;
 }
 
-
 /* ==========================================
-   5. EQUIPE
+   04 — EQUIPE DO PROJETO
 ========================================== */
 
 .about-team {
@@ -193,44 +188,215 @@ main {
     background-color: var(--color-cream);
 }
 
-.about-team > .container > p {
-    margin-bottom: 22px;
+/* CABEÇALHO */
+
+.team-heading {
+    margin-bottom: 32px;
 }
 
-.about-team ul {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
-    margin: 0;
-    padding: clamp(22px, 3vw, 30px);
-    border-radius: 24px;
+.team-heading .section-label {
+    margin-bottom: 14px;
+}
+
+.team-heading h2 {
+    margin-bottom: 12px;
+}
+
+.team-heading p {
+    max-width: 780px;
+}
+
+/* LISTA HORIZONTAL */
+
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+/* CARD */
+
+.team-card {
+    width: 100%;
+    overflow: hidden;
+
+    border: 1px solid rgb(0 0 0 / 9%);
+    border-radius: 18px;
+
     background-color: var(--color-mint);
-    list-style: none;
+
+    transition:
+        border-color 220ms ease,
+        box-shadow 220ms ease,
+        transform 220ms ease;
 }
 
-.about-team li {
-    position: relative;
-    padding-left: 24px;
+/* DESTAQUE */
+
+.team-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-green);
+    box-shadow: 0 9px 22px rgb(0 0 0 / 7%);
+}
+
+.team-card.active {
+    border-color: var(--color-green);
+    box-shadow: 0 8px 22px rgb(0 0 0 / 7%);
+}
+
+/* BOTÃO DO CARD */
+
+.team-card-toggle {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 26px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    border: none;
+    background: transparent;
+
     color: black;
-    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* ÍCONES DOS INTEGRANTES */
+
+.team-member-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    flex: 0 0 48px;
+
+    display: grid;
+    place-items: center;
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    border-radius: 14px;
+    background-color: var(--color-cream);
+    color: black;
+
+    font-size: 19px;
+    line-height: 1;
+    text-align: center;
+
+    transition:
+        background-color 220ms ease,
+        color 220ms ease,
+        transform 220ms ease;
+}
+
+.team-member-icon::before {
+    display: block;
+    margin: 2px 0 0;
+    padding: 0;
+    line-height: 1;
+    margin-top: 15px;
+}
+
+.team-card:hover .team-member-icon,
+.team-card.active .team-member-icon {
+    background-color: var(--color-green);
+    color: black;
+    transform: scale(1.05);
+}
+
+/* NOME E FUNÇÃO */
+
+.team-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.team-info strong {
+    color: black;
+    font-size: 1.05rem;
     font-weight: 800;
-    line-height: 1.5;
 }
 
-.about-team li::before {
-    position: absolute;
-    top: 0.58em;
-    left: 0;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background-color: var(--color-lilac);
-    content: "";
+.team-info span {
+    color: rgb(0 0 0 / 65%);
+    font-size: 0.88rem;
+    font-weight: 600;
 }
 
+/* ÍCONE DE EXPANSÃO */
+
+.team-icon {
+    flex-shrink: 0;
+    color: black;
+    font-size: 15px;
+
+    transition: transform 220ms ease;
+}
+
+.team-card.active .team-icon {
+    transform: rotate(45deg);
+}
+
+/* ÁREA EXPANSÍVEL */
+
+.team-details {
+    margin: 0 26px;
+    padding: 0 0 24px 68px;
+
+    border-top: 1px solid rgb(0 0 0 / 10%);
+
+    animation: teamReveal 250ms ease;
+}
+
+.team-details-label {
+    display: block;
+    margin: 18px 0 8px;
+
+    color: black;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.team-details p {
+    max-width: 850px;
+    margin: 0;
+
+    color: rgb(0 0 0 / 75%);
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+/* ANIMAÇÃO */
+
+@keyframes teamReveal {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FOCO DO TECLADO */
+
+.team-card-toggle:focus-visible {
+    outline: 3px solid black;
+    outline-offset: -5px;
+}
 
 /* ==========================================
-   6. TECNOLOGIAS
+   05 — FERRAMENTAS / TECNOLOGIAS
 ========================================== */
 
 .about-technologies {
@@ -247,33 +413,34 @@ main {
     width: 100%;
     height: 1px;
     margin-top: 30px;
+
     background-color: rgb(0 0 0 / 18%);
     content: "";
 }
-
-/* Estilo dos chips de tecnologia, caso
-   sejam adicionados como lista ao HTML */
 
 .about-technologies ul {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+
     margin: 0;
     padding: 0;
+
     list-style: none;
 }
 
 .about-technologies li {
     padding: 12px 16px;
     border-radius: 14px;
+
     background-color: var(--color-peach);
     color: black;
+
     font-weight: 800;
 }
 
-
 /* ==========================================
-   7. RESPONSIVIDADE
+   RESPONSIVIDADE
 ========================================== */
 
 @media (max-width: 767.98px) {
@@ -303,6 +470,10 @@ main {
     .about-technologies {
         padding-block: 42px;
     }
+
+    .team-heading {
+        margin-bottom: 26px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -313,12 +484,11 @@ main {
 
     .about-hero p,
     .about-project p,
-    .about-team > .container > p {
+    .about-team .team-heading > p {
         font-size: 0.98rem;
     }
 
-    .about-project .container,
-    .about-team ul {
+    .about-project .container {
         padding: 22px;
         border-radius: 20px;
     }
@@ -326,15 +496,64 @@ main {
     .about-purpose article p {
         font-size: 1.15rem;
     }
+
+    /* CARDS DA EQUIPE */
+
+    .team-list {
+        gap: 11px;
+    }
+
+    .team-card {
+        border-radius: 15px;
+    }
+
+    .team-card-toggle {
+        min-height: 85px;
+        padding: 16px;
+        gap: 14px;
+    }
+
+    .team-info strong {
+        font-size: 0.98rem;
+    }
+
+    .team-info span {
+        font-size: 0.78rem;
+    }
+
+    .team-details {
+        margin: 0 16px;
+        padding: 0 0 18px 56px;
+    }
+
+    .team-details p {
+        font-size: 0.84rem;
+    }
+
+    .about-technologies ul {
+        gap: 9px;
+    }
+
+    .about-technologies li {
+        padding: 10px 13px;
+        font-size: 0.88rem;
+    }
 }
 
-
 /* ==========================================
-   8. ACESSIBILIDADE
+   ACESSIBILIDADE
 ========================================== */
 
 @media (prefers-reduced-motion: reduce) {
-    .about-hero a {
+
+    .about-hero a,
+    .team-card,
+    .team-member-icon,
+    .team-icon {
         transition: none;
+    }
+
+    .team-details {
+        animation: none;
     }
 }

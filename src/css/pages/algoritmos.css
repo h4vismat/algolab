@@ -1,270 +1,140 @@
-
-/* ==========================================
-   1. HERO
-========================================== */
-
+/* Página de algoritmos */
 .algorithms-hero h1 {
-    color: #40352f;
-    font-size: clamp(2.7rem, 5vw, 4.5rem);
-    font-weight: 800;
-}
-
+    color: #40352f; font-size: clamp(2.7rem, 5vw, 4.5rem);
+    font-weight: 800; }
 .algorithms-hero p {
-    color: #71665e;
-    font-size: 1.15rem;
-    font-weight: 600;
-    line-height: 1.7;
-}
-
-.algorithms-hero span,
-.algorithms-comparison span {
-    color: #82766c;
-    font-size: 0.9rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-}
-
-/* Ilustração */
-
+    color: #71665e; font-size: 1.15rem;
+    font-weight: 600; line-height: 1.7; }
+.algorithms-hero span, .algorithms-comparison span {
+    color: #82766c; font-size: 0.9rem;
+    font-weight: 800; letter-spacing: 0.08em; }
 .algorithms-hero-illustration {
-    position: relative;
-    min-height: 300px;
-    border-radius: 36px;
-    background-color: #eee8dc;
-    overflow: hidden;
-}
-
+    position: relative; min-height: 300px;
+    border-radius: 36px; background-color: #eee8dc;
+    overflow: hidden; }
 .algorithms-hero-illustration::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 43%;
-    width: 24px;
-    height: 72px;
-    border-radius: 9px;
-    background-color: var(--color-mint);
-    transform: translateX(-82px);
-    box-shadow:
-        42px -48px 0 var(--color-lilac),
-        84px -18px 0 var(--color-pink),
-        126px -82px 0 var(--color-peach),
-        168px -34px 0 var(--color-green);
-}
-
+    content: ""; position: absolute;
+    left: 50%; bottom: 43%;
+    width: 24px; height: 72px;
+    border-radius: 9px; background-color: var(--color-mint);
+    transform: translateX(-82px); box-shadow: 42px -48px 0 var(--color-lilac), 84px -18px 0 var(--color-pink), 126px -82px 0 var(--color-peach), 168px -34px 0 var(--color-green); }
 .algorithms-hero-illustration::after {
-    content: "ORDENAÇÃO";
-    position: absolute;
-    top: 67%;
-    width: 100%;
-    color: #71665e;
-    font-size: 1.3rem;
-    font-weight: 800;
-    text-align: center;
-}
-
-
-/* ==========================================
-   2. CATÁLOGO
-========================================== */
-
+    content: "FUNDAMENTOS"; position: absolute;
+    top: 67%; width: 100%;
+    color: #71665e; font-size: 1.3rem;
+    font-weight: 800; text-align: center; }
 .algorithms-catalog {
-    background-color: #f3efe7;
-}
-
-.algorithms-catalog h2,
-.algorithm-card h3,
-.algorithms-comparison h2 {
-    color: #40352f;
-    font-weight: 800;
-}
-
+    background-color: #f3efe7; }
+.algorithms-catalog h2, .algorithm-card h3, .algorithms-comparison h2 {
+    color: #40352f; font-weight: 800; }
 .algorithms-catalog h2 {
-    font-size: clamp(1.8rem, 3.5vw, 2.7rem);
-}
-
-/* Cards */
-
+    font-size: clamp(1.8rem, 3.5vw, 2.7rem); }
 .algorithm-card {
-    padding: clamp(22px, 3.5vw, 34px);
-    border: 0;
-    border-radius: 30px;
-    color: #40352f;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
+    padding: clamp(22px, 3.5vw, 34px); border: 0;
+    border-radius: 30px; color: #40352f;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; }
 .algorithm-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(64, 53, 47, 0.08);
-}
-
+    transform: translateY(-4px); box-shadow: 0 12px 28px rgba(64, 53, 47, 0.08); }
 .algorithm-card-header span:first-child {
-    padding: 8px 16px;
-    border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.28);
-    color: #398b70;
-    font-size: 0.85rem;
-    font-weight: 800;
-}
-
+    padding: 8px 16px; border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.28); color: #398b70;
+    font-size: 0.85rem; font-weight: 800; }
 .algorithm-card-header span:last-child {
-    color: rgba(64, 53, 47, 0.65);
-    font-size: 1.15rem;
-    font-weight: 800;
-}
-
+    color: rgba(64, 53, 47, 0.65); font-size: 1.15rem;
+    font-weight: 800; }
 .algorithm-card h3 {
-    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-}
-
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
 .algorithm-card p {
-    max-width: 620px;
-    color: #51463f;
-    font-size: 1.05rem;
-    font-weight: 600;
-    line-height: 1.65;
+    max-width: 620px; color: #51463f;
+    font-size: 1.05rem; font-weight: 600;
+    line-height: 1.65; }
+.algorithm-card a, .algorithms-comparison a {
+    color: #40352f; font-weight: 800;
+    text-decoration: none; transition: color 0.2s ease; }
+.algorithm-card a:hover, .algorithms-comparison a:hover {
+    color: #28785e; }
+.algorithm-card a:hover {
+    transform: translateX(4px); }
+.bubble-card {
+    background-color: var(--color-peach); }
+.insertion-card {
+    background-color: var(--color-pink); }
+.insertion-card .algorithm-card-header span:first-child {
+    color: #806bb5; }
+.algorithm-card-illustration {
+    position: relative; min-height: 190px;
+    border-radius: 24px; background-color: rgba(255, 255, 255, 0.58);
+    overflow: hidden; }
+.algorithm-card-illustration::before {
+    content: ""; position: absolute;
+    left: 50%; bottom: 38%;
+    width: 22px; height: 58px;
+    border-radius: 8px; background-color: #75a895;
+    transform: translateX(-65px); box-shadow: 34px -32px 0 #75a895, 68px -12px 0 #75a895, 102px -62px 0 #75a895; }
+.algorithm-card-illustration::after {
+    content: "ILUSTRAÇÃO"; position: absolute;
+    top: 75%; width: 100%;
+    color: #58796e; font-size: 1.05rem;
+    font-weight: 800; text-align: center; }
+.insertion-illustration::before {
+    background-color: #9582c5; box-shadow: 34px -32px 0 #9582c5, 68px -52px 0 #9582c5, 102px -82px 0 #9582c5; }
+.insertion-illustration::after {
+    color: #746394; }
+.algorithms-comparison {
+    padding: clamp(28px, 4vw, 42px); border-radius: 30px;
+    background-color: #eee8dc; }
+.algorithms-comparison h2 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem); }
+.algorithms-comparison p {
+    max-width: 760px; color: #71665e;
+    font-size: 1.05rem; font-weight: 600;
+    line-height: 1.65; }
+/* Ajustes para telas menores e acessibilidade */
+@media (max-width: 767.98px) {
+    .algorithms-hero-illustration {
+        min-height: 230px; max-width: 420px;
+        margin-inline: auto; }
+    .algorithm-card {
+        padding: 24px; border-radius: 26px; }
+    .algorithm-card-illustration {
+        min-height: 170px; }
+}
+@media (max-width: 575.98px) {
+    .algorithms-hero h1 {
+        font-size: 2.5rem; }
+    .algorithms-hero p, .algorithm-card p, .algorithms-comparison p {
+        font-size: 0.98rem; }
+    .algorithm-card h3 {
+        font-size: 1.8rem; }
+    .algorithm-card-illustration {
+        min-height: 155px; }
 }
 
-.algorithm-card a,
-.algorithms-comparison a {
-    color: #40352f;
-    font-weight: 800;
-    text-decoration: none;
+.btn-details {
+    background: transparent;
+    border: none;
+    padding: 8px 0;
+    font-weight: 600;
+    cursor: pointer;
     transition: color 0.2s ease;
 }
 
-.algorithm-card a:hover,
-.algorithms-comparison a:hover {
-    color: #28785e;
+.btn-details:hover {
+    color: var(--color-green);
 }
 
-.algorithm-card a:hover {
-    transform: translateX(4px);
+.btn-details i {
+    margin-left: 5px;
+    transition: transform 0.2s ease;
 }
 
-/* Cores dos algoritmos */
-
-.bubble-card {
-    background-color: var(--color-peach);
+.btn-details[aria-expanded="true"] i {
+    transform: rotate(180deg);
 }
 
-.insertion-card {
-    background-color: var(--color-pink);
-}
-
-.insertion-card .algorithm-card-header span:first-child {
-    color: #806bb5;
-}
-
-/* Ilustrações dos cards */
-
-.algorithm-card-illustration {
-    position: relative;
-    min-height: 190px;
-    border-radius: 24px;
-    background-color: rgba(255, 255, 255, 0.58);
-    overflow: hidden;
-}
-
-.algorithm-card-illustration::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 38%;
-    width: 22px;
-    height: 58px;
-    border-radius: 8px;
-    background-color: #75a895;
-    transform: translateX(-65px);
-    box-shadow:
-        34px -32px 0 #75a895,
-        68px -12px 0 #75a895,
-        102px -62px 0 #75a895;
-}
-
-.algorithm-card-illustration::after {
-    content: "ILUSTRAÇÃO";
-    position: absolute;
-    top: 75%;
-    width: 100%;
-    color: #58796e;
-    font-size: 1.05rem;
-    font-weight: 800;
-    text-align: center;
-}
-
-.insertion-illustration::before {
-    background-color: #9582c5;
-    box-shadow:
-        34px -32px 0 #9582c5,
-        68px -52px 0 #9582c5,
-        102px -82px 0 #9582c5;
-}
-
-.insertion-illustration::after {
-    color: #746394;
-}
-
-
-/* ==========================================
-   3. CHAMADA PARA COMPLEXIDADE
-========================================== */
-
-.algorithms-comparison {
-    padding: clamp(28px, 4vw, 42px);
-    border-radius: 30px;
-    background-color: #eee8dc;
-}
-
-.algorithms-comparison h2 {
-    font-size: clamp(1.6rem, 3vw, 2.2rem);
-}
-
-.algorithms-comparison p {
-    max-width: 760px;
-    color: #71665e;
-    font-size: 1.05rem;
-    font-weight: 600;
-    line-height: 1.65;
-}
-
-
-/* ==========================================
-   4. RESPONSIVIDADE
-========================================== */
-
-@media (max-width: 767.98px) {
-    .algorithms-hero-illustration {
-        min-height: 230px;
-        max-width: 420px;
-        margin-inline: auto;
-    }
-
-    .algorithm-card {
-        padding: 24px;
-        border-radius: 26px;
-    }
-
-    .algorithm-card-illustration {
-        min-height: 170px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .algorithms-hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .algorithms-hero p,
-    .algorithm-card p,
-    .algorithms-comparison p {
-        font-size: 0.98rem;
-    }
-
-    .algorithm-card h3 {
-        font-size: 1.8rem;
-    }
-
-    .algorithm-card-illustration {
-        min-height: 155px;
-    }
+.algorithm-details {
+    padding: 12px;
+    margin-top: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
 }
