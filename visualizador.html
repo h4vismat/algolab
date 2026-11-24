@@ -227,52 +227,301 @@
                         <!-- ==========================================
                              VISUALIZAÇÃO DO BUBBLE SORT
                         =========================================== -->
-                        <div id="bubble-display" class="algorithm-display bubble-display">
+                        
+                    <div id="bubble-display" class="algorithm-display bubble-display">
 
-                            <h2>Execução do Bubble Sort</h2>
+                        <h2>Execução do Bubble Sort</h2>
 
-                            <!-- Área demonstrativa do algoritmo -->
-                            <div class="algorithm-demonstration">
+                        <div class="row g-4">
 
-                                <span>Demonstração do Bubble Sort</span>
+                            <!-- COLUNA DA EXECUÇÃO -->
+                            <div class="col-12 col-lg-6">
 
-                                <!-- GIF demonstrativo do Bubble Sort -->
-                                <div class="algorithm-animation">
-                                    <img
-                                        src="src/assets/images/Sorting_bubblesort_anim.gif"
-                                        alt="Demonstração da execução do Bubble Sort"
-                                        class="img-fluid"
-                                    >
+                                <div class="algorithm-demonstration">
+
+                                    <span>Demonstração do Bubble Sort</span>
+
+                                    <div class="algorithm-animation">
+                                        <video
+                                            id="bubble-video"
+                                            src="src/assets/images/Sorting_bubblesort_anim.mp4"
+                                            aria-label="Demonstração do Bubble Sort"
+                                            preload="metadata"
+                                            playsinline
+                                        ></video>
+                                    </div>
+
+                                    <div class="video-status">
+                                        <span class="status-indicator" id="bubble-status-indicator"></span>
+                                        <span id="bubble-status-text">Pronto</span>
+                                    </div>
+
+                                    <div class="animation-controls">
+
+                                        <button type="button" id="bubble-play-button">
+                                            <i class="fa-solid fa-play"></i>
+                                            Iniciar
+                                        </button>
+
+                                        <button type="button" id="bubble-pause-button">
+                                            <i class="fa-solid fa-pause"></i>
+                                            Pausar
+                                        </button>
+
+                                        <button type="button" id="bubble-restart-button">
+                                            <i class="fa-solid fa-rotate-left"></i>
+                                            Reiniciar
+                                        </button>
+
+                                        <div class="speed-control">
+                                            <label for="bubble-animation-speed">Velocidade:</label>
+
+                                            <select id="bubble-animation-speed">
+                                                <option value="1">Normal</option>
+                                                <option value="0.5">Lenta</option>
+                                                <option value="2">Rápida</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
                                 </div>
 
                             </div>
 
+                            <!-- COLUNA DA IMPLEMENTAÇÃO -->
+                             
+                            <div class="col-12 col-lg-6">
+
+                                <div class="algorithm-code">
+
+                                    <div class="code-header">
+                                        <span>Implementação</span>
+
+                                        <button type="button" id="bubble-copy-code">
+                                            <i class="fa-regular fa-copy"></i>
+                                            Copiar
+                                        </button>
+                                    </div>
+
+                                    <!-- SELETOR DE LINGUAGENS -->
+                                    <div class="code-language-selector">
+
+                                        <button type="button"
+                                            class="language-select-button"
+                                            id="bubble-language-toggle"
+                                            aria-expanded="false">
+
+                                            <i class="fa-brands fa-python"></i>
+
+                                            <span id="bubble-language-name">
+                                                Exemplo em Python
+                                            </span>
+
+                                            <i class="fa-solid fa-chevron-down"></i>
+
+                                        </button>
+
+                                        <div class="language-options"
+                                            id="bubble-language-options"
+                                            hidden>
+
+                                            <button type="button" data-language="python">
+                                                <i class="fa-brands fa-python"></i>
+                                                Exemplo em Python
+                                            </button>
+
+                                            <button type="button" data-language="c">
+                                                <i class="fa-solid fa-code"></i>
+                                                Exemplo em C
+                                            </button>
+
+                                            <button type="button" data-language="javascript">
+                                                <i class="fa-brands fa-js"></i>
+                                                Exemplo em JavaScript
+                                            </button>
+
+                                            <button type="button" data-language="java">
+                                                <i class="fa-brands fa-java"></i>
+                                                Exemplo em Java
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- CÓDIGO EXIBIDO -->
+                                    <pre><code id="bubble-python-code" class="language-python">def bubble_sort(lista):
+        n = len(lista)
+
+        for i in range(n):
+            for j in range(0, n - i - 1):
+                if lista[j] > lista[j + 1]:
+                    lista[j], lista[j + 1] = (
+                        lista[j + 1],
+                        lista[j]
+                    )
+
+        return lista</code></pre>
+
+                                </div>
+                            </div>
                         </div>
+
+                    </div>
+
 
 
                         <!-- ==========================================
                              VISUALIZAÇÃO DO INSERTION SORT
                         =========================================== -->
-                        <div
-                            id="insertion-display"
-                            class="algorithm-display insertion-display"
-                            hidden
-                        >
+                        <div id="insertion-display" class="algorithm-display insertion-display">
 
                             <h2>Execução do Insertion Sort</h2>
 
-                            <!-- Área demonstrativa do algoritmo -->
-                            <div class="algorithm-demonstration">
+                            <div class="row g-4">
 
-                                <span>Demonstração do Insertion Sort</span>
+                                <!-- COLUNA DA EXECUÇÃO -->
+                                <div class="col-12 col-lg-6">
 
-                                <!-- GIF demonstrativo do Insertion Sort -->
-                                <div class="algorithm-animation">
-                                    <img
-                                        src="src/assets/images/Sorting_insertion_sort_anim.gif"
-                                        alt="Demonstração da execução do Insertion Sort"
-                                        class="img-fluid"
-                                    >
+                                    <div class="algorithm-demonstration">
+
+                                        <span>Demonstração do Insertion Sort</span>
+
+                                        <div class="algorithm-animation">
+                                            <video
+                                                id="insertion-video"
+                                                src="src/assets/images/Sorting_insertion_sort_anim.mp4"
+                                                aria-label="Demonstração do Insertion Sort"
+                                                preload="metadata"
+                                                playsinline
+                                            ></video>
+                                        </div>
+
+                                        <div class="video-status">
+                                            <span
+                                                class="status-indicator"
+                                                id="insertion-status-indicator">
+                                            </span>
+
+                                            <span id="insertion-status-text">Pronto</span>
+                                        </div>
+
+                                        <div class="animation-controls">
+
+                                            <button type="button" id="insertion-play-button">
+                                                <i class="fa-solid fa-play"></i>
+                                                Iniciar
+                                            </button>
+
+                                            <button type="button" id="insertion-pause-button">
+                                                <i class="fa-solid fa-pause"></i>
+                                                Pausar
+                                            </button>
+
+                                            <button type="button" id="insertion-restart-button">
+                                                <i class="fa-solid fa-rotate-left"></i>
+                                                Reiniciar
+                                            </button>
+
+                                            <div class="speed-control">
+                                                <label for="insertion-animation-speed">
+                                                    Velocidade:
+                                                </label>
+
+                                                <select id="insertion-animation-speed">
+                                                    <option value="1">Normal</option>
+                                                    <option value="0.5">Lenta</option>
+                                                    <option value="2">Rápida</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- COLUNA DA IMPLEMENTAÇÃO -->
+                                <div class="col-12 col-lg-6">
+
+                                    <div class="algorithm-code">
+
+                                        <div class="code-header">
+                                            <span>Implementação</span>
+
+                                            <button type="button" id="insertion-copy-code">
+                                                <i class="fa-regular fa-copy"></i>
+                                                Copiar
+                                            </button>
+                                        </div>
+
+                                        <!-- SELETOR DE LINGUAGENS -->
+                                        <div class="code-language-selector">
+
+                                            <button
+                                                type="button"
+                                                class="language-select-button"
+                                                id="insertion-language-toggle"
+                                                aria-expanded="false">
+
+                                                <i class="fa-brands fa-python"></i>
+
+                                                <span id="insertion-language-name">
+                                                    Exemplo em Python
+                                                </span>
+
+                                                <i class="fa-solid fa-chevron-down"></i>
+
+                                            </button>
+
+                                            <div
+                                                class="language-options"
+                                                id="insertion-language-options"
+                                                hidden>
+
+                                                <button type="button" data-language="python">
+                                                    <i class="fa-brands fa-python"></i>
+                                                    Exemplo em Python
+                                                </button>
+
+                                                <button type="button" data-language="c">
+                                                    <i class="fa-solid fa-code"></i>
+                                                    Exemplo em C
+                                                </button>
+
+                                                <button type="button" data-language="javascript">
+                                                    <i class="fa-brands fa-js"></i>
+                                                    Exemplo em JavaScript
+                                                </button>
+
+                                                <button type="button" data-language="java">
+                                                    <i class="fa-brands fa-java"></i>
+                                                    Exemplo em Java
+                                                </button>
+
+                                            </div>
+
+                                        </div>
+
+                                        <!-- CÓDIGO EXIBIDO -->
+                                        <pre><code
+                                            id="insertion-python-code"
+                                            class="language-python">def insertion_sort(lista):
+        for i in range(1, len(lista)):
+        chave = lista[i]
+        j = i - 1
+
+        while j >= 0 and lista[j] > chave:
+            lista[j + 1] = lista[j]
+            j -= 1
+
+        lista[j + 1] = chave
+
+    return lista</code></pre>
+
+                                    </div>
+
                                 </div>
 
                             </div>

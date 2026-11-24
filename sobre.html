@@ -155,41 +155,217 @@
         </section>
 
 
-        <!-- ==========================================
-             EQUIPE DO PROJETO
-        =========================================== -->
-        <section class="about-team">
+        
+<!-- ==========================================
+     EQUIPE DO PROJETO
+=========================================== -->
+<section class="about-team" id="equipe">
 
-            <div class="container">
+    <div class="container">
 
-                <span>02 — EQUIPE</span>
+        <!-- CABEÇALHO -->
+        <div class="team-heading">
 
-                <h2>Quem construiu o projeto?</h2>
+            <span class="section-label">02 — EQUIPE</span>
 
-                <p>
-                    Apresentação dos cinco integrantes, com seus nomes
-                    e respectivas responsabilidades.
-                </p>
+            <h2>Quem construiu o projeto?</h2>
 
-                <!-- Lista de integrantes e responsabilidades -->
-                <ul>
+            <p>
+                Conheça as pessoas por trás do AlgoLab e descubra
+                como cada integrante contribuiu para transformar
+                a proposta em uma plataforma interativa.
+            </p>
 
-                    <li>Edson — Estrutura e layout</li>
-                    <li>Ramon — Componentes e interações</li>
-                    <li>Lucca — Lógica dos algoritmos</li>
-                    <li>Rafael — Apoio na estrutura e layout</li>
-                    <li>Jonatha — Documentação</li>
+        </div>
 
-                </ul>
+        <!-- INTEGRANTES -->
+        <div class="team-list">
 
-            </div>
+            <!-- EDSON -->
+            <article class="team-card">
 
-        </section>
+                <button class="team-card-toggle"
+                        type="button"
+                        aria-expanded="false">
 
+                    <i class="fa-solid fa-layer-group team-member-icon"></i>
 
-        <!-- ==========================================
+                    <span class="team-info">
+                        <strong>Edson</strong>
+                        <span>Estrutura e layout</span>
+                    </span>
+
+                    <i class="fa-solid fa-plus team-icon"></i>
+
+                </button>
+
+                <div class="team-details" hidden>
+
+                    <span class="team-details-label">
+                        RESPONSABILIDADES
+                    </span>
+
+                    <p>
+                        Responsável pela organização da estrutura
+                        do projeto e construção do layout das páginas,
+                        contribuindo para a disposição dos elementos
+                        e a identidade visual da plataforma.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- RAMON -->
+            <article class="team-card">
+
+                <button class="team-card-toggle"
+                        type="button"
+                        aria-expanded="false">
+
+                    <i class="fa-solid fa-wand-magic-sparkles team-member-icon"></i>
+
+                    <span class="team-info">
+                        <strong>Ramon</strong>
+                        <span>Componentes e interações</span>
+                    </span>
+
+                    <i class="fa-solid fa-plus team-icon"></i>
+
+                </button>
+
+                <div class="team-details" hidden>
+
+                    <span class="team-details-label">
+                        RESPONSABILIDADES
+                    </span>
+
+                    <p>
+                        Responsável pelo desenvolvimento dos componentes
+                        visuais, implementação das interações e integração
+                        dos controles com os algoritmos, proporcionando
+                        uma experiência dinâmica e interativa.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- LUCCA -->
+            <article class="team-card">
+
+                <button class="team-card-toggle"
+                        type="button"
+                        aria-expanded="false">
+
+                    <i class="fa-solid fa-code team-member-icon"></i>
+
+                    <span class="team-info">
+                        <strong>Lucca</strong>
+                        <span>Lógica dos algoritmos</span>
+                    </span>
+
+                    <i class="fa-solid fa-plus team-icon"></i>
+
+                </button>
+
+                <div class="team-details" hidden>
+
+                    <span class="team-details-label">
+                        RESPONSABILIDADES
+                    </span>
+
+                    <p>
+                        Responsável pela implementação da lógica dos
+                        algoritmos, desenvolvimento de suas operações
+                        e garantia de seu funcionamento dentro
+                        da plataforma.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- RAFAEL -->
+            <article class="team-card">
+
+                <button class="team-card-toggle"
+                        type="button"
+                        aria-expanded="false">
+
+                    <i class="fa-solid fa-pen-ruler team-member-icon"></i>
+
+                    <span class="team-info">
+                        <strong>Rafael</strong>
+                        <span>Apoio na estrutura e layout</span>
+                    </span>
+
+                    <i class="fa-solid fa-plus team-icon"></i>
+
+                </button>
+
+                <div class="team-details" hidden>
+
+                    <span class="team-details-label">
+                        RESPONSABILIDADES
+                    </span>
+
+                    <p>
+                        Responsável por auxiliar na construção da
+                        estrutura do projeto e na organização visual
+                        das páginas, colaborando para a consistência
+                        da interface.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- JONATHA -->
+            <article class="team-card">
+
+                <button class="team-card-toggle"
+                        type="button"
+                        aria-expanded="false">
+
+                    <i class="fa-solid fa-file-lines team-member-icon"></i>
+
+                    <span class="team-info">
+                        <strong>Jonatha</strong>
+                        <span>Documentação</span>
+                    </span>
+
+                    <i class="fa-solid fa-plus team-icon"></i>
+
+                </button>
+
+                <div class="team-details" hidden>
+
+                    <span class="team-details-label">
+                        RESPONSABILIDADES
+                    </span>
+
+                    <p>
+                        Responsável pela elaboração e organização
+                        da documentação do projeto, registrando
+                        informações sobre seu desenvolvimento,
+                        estrutura e funcionalidades.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- 
+        -==========================================
              TECNOLOGIAS UTILIZADAS
-        =========================================== -->
+        =========================================== -
         <section class="about-technologies">
 
             <div class="container">
@@ -198,7 +374,7 @@
 
                 <h2>Ferramentas utilizadas.</h2>
 
-                <!-- Ícones das tecnologias utilizadas no projeto -->
+                <- Ícones das tecnologias utilizadas no projeto -
 
             </div>
 
@@ -206,6 +382,7 @@
 
     </main>
 
+-->
 
     <!-- ==========================================
          RODAPÉ
@@ -283,6 +460,8 @@
         <p>&copy; 2026 AlgoLab. Projeto acadêmico.</p>
       </div>
     </footer>
+
+    <script src="src/js/sobre.js"></script>
 
 </body>
 </html>

@@ -118,9 +118,30 @@
                 deslocado para o final do conjunto.
               </p>
 
-              <a href="visualizador.html?algoritmo=bubble">
-                Ver detalhes →
-              </a>
+              <button
+                  class="btn-details"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#bubble-details"
+                  aria-expanded="false"
+                  aria-controls="bubble-details"
+              >
+                  Ver detalhes
+                  <i class="fa-solid fa-chevron-down"></i>
+              </button>
+
+              <div class="collapse" id="bubble-details">
+                  <div class="algorithm-details">
+                      <p>
+                          O Bubble Sort compara elementos adjacentes e realiza trocas
+                          quando estão fora de ordem, repetindo o processo até ordenar
+                          todo o conjunto.
+                      </p>
+
+                      <p><strong>Complexidade:</strong> O(n²) no caso médio.</p>
+                      <p><strong>Estabilidade:</strong> Estável.</p>
+                  </div>
+              </div>
 
             </div>
 
@@ -154,9 +175,29 @@
                 até encontrar o local adequado.
               </p>
 
-              <a href="visualizador.html?algoritmo=insertion">
-                Ver detalhes →
-              </a>
+              <button
+                  class="btn-details"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#insertion-details"
+                  aria-expanded="false"
+                  aria-controls="insertion-details"
+              >
+                  Ver detalhes
+                  <i class="fa-solid fa-chevron-down"></i>
+              </button>
+
+              <div class="collapse" id="insertion-details">
+                  <div class="algorithm-details">
+                      <p>
+                          O Insertion Sort organiza os elementos inserindo cada valor
+                          na posição correta em relação aos elementos anteriores.
+                      </p>
+
+                      <p><strong>Complexidade:</strong> O(n²) no caso médio.</p>
+                      <p><strong>Estabilidade:</strong> Estável.</p>
+                  </div>
+              </div>
 
             </div>
 
@@ -291,6 +332,8 @@
     </div>
 
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
