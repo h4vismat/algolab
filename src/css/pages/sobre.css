@@ -1,7 +1,4 @@
-
-/* ==========================================
-   ALGOLAB — PÁGINA SOBRE O PROJETO
-========================================== */
+/* Página sobre o projeto */
 
 main {
     color: black;
@@ -26,9 +23,7 @@ main {
     max-width: 1140px;
 }
 
-/* ==========================================
-   01 — APRESENTAÇÃO
-========================================== */
+/* Apresentação */
 
 .about-hero {
     padding: clamp(52px, 7vw, 90px) 0 clamp(38px, 5vw, 58px);
@@ -90,9 +85,7 @@ main {
     outline-offset: 4px;
 }
 
-/* ==========================================
-   02 — SOBRE O PROJETO
-========================================== */
+/* Projeto */
 
 .about-project {
     padding: 26px 0;
@@ -125,9 +118,7 @@ main {
     line-height: 1.7;
 }
 
-/* ==========================================
-   03 — NOSSA PROPOSTA
-========================================== */
+/* Proposta */
 
 .about-purpose {
     padding: 22px 0 clamp(42px, 6vw, 70px);
@@ -179,9 +170,7 @@ main {
     line-height: 1.45;
 }
 
-/* ==========================================
-   04 — EQUIPE DO PROJETO
-========================================== */
+/* Equipe do projeto */
 
 .about-team {
     padding: clamp(42px, 6vw, 70px) 0;
@@ -395,9 +384,7 @@ main {
     outline-offset: -5px;
 }
 
-/* ==========================================
-   05 — FERRAMENTAS / TECNOLOGIAS
-========================================== */
+/* Tecnologias */
 
 .about-technologies {
     padding: clamp(42px, 6vw, 70px) 0;
@@ -439,9 +426,7 @@ main {
     font-weight: 800;
 }
 
-/* ==========================================
-   RESPONSIVIDADE
-========================================== */
+/* Ajustes para telas menores */
 
 @media (max-width: 767.98px) {
 
@@ -540,9 +525,7 @@ main {
     }
 }
 
-/* ==========================================
-   ACESSIBILIDADE
-========================================== */
+/* Movimento reduzido */
 
 @media (prefers-reduced-motion: reduce) {
 

@@ -1,13 +1,4 @@
-
-/* ==========================================
-   ALGOLAB — PÁGINA DO VISUALIZADOR
-   Estilos exclusivos de visualizador.html
-========================================== */
-
-
-/* ==========================================
-   1. APRESENTAÇÃO
-========================================== */
+/* Página do visualizador */
 
 .visualizer-hero {
     padding: clamp(44px, 6vw, 76px) 0 38px;
@@ -47,10 +38,7 @@
     line-height: 1.65;
 }
 
-
-/* ==========================================
-   2. ÁREA DO VISUALIZADOR
-========================================== */
+/* Área do visualizador */
 
 .visualizer-content {
     padding: 28px 0 clamp(48px, 6vw, 76px);
@@ -62,7 +50,6 @@
     --bs-gutter-y: 1.5rem;
     align-items: stretch;
 }
-
 
 /* Painel lateral */
 
@@ -143,7 +130,6 @@
     outline-offset: 3px;
 }
 
-
 /* Informações dos algoritmos */
 
 #bubble-info,
@@ -167,7 +153,6 @@
     font-weight: 600;
     line-height: 1.65;
 }
-
 
 /* Cartões de complexidade da barra lateral */
 
@@ -203,10 +188,7 @@
     background-color: var(--color-pink);
 }
 
-
-/* ==========================================
-   3. PAINEL DE DEMONSTRAÇÃO
-========================================== */
+/* Painel de demonstração */
 
 .algorithm-display {
     min-height: 100%;
@@ -239,7 +221,6 @@
     text-transform: uppercase;
 }
 
-
 /* Exibição dos GIFs dos algoritmos */
 
 .algorithm-animation {
@@ -260,7 +241,6 @@
     border-radius: 12px;
 }
 
-
 /* Aparência específica do Insertion Sort */
 
 .insertion-display {
@@ -271,10 +251,7 @@
     background-color: rgb(255 255 255 / 62%);
 }
 
-
-/* ==========================================
-   4. RESPONSIVIDADE
-========================================== */
+/* Ajustes para telas menores */
 
 @media (max-width: 767.98px) {
 
@@ -340,10 +317,7 @@
     }
 }
 
-
-/* ==========================================
-   5. ACESSIBILIDADE
-========================================== */
+/* Movimento reduzido */
 
 @media (prefers-reduced-motion: reduce) {
     .algorithm-option {
@@ -351,9 +325,7 @@
     }
 }
 
-/* ==========================================
-   CONTROLES DA ANIMAÇÃO
-========================================== */
+/* Controles da animação */
 
 .animation-controls {
     display: flex;
@@ -411,9 +383,7 @@
     cursor: pointer;
 }
 
-/* ==========================================
-   INDICADOR DE ESTADO DOS VÍDEOS
-========================================== */
+/* Indicador de estado dos vídeos */
 
 .video-status {
     display: flex;
@@ -451,10 +421,7 @@
     background-color: #999;
 }
 
-
-/* ==========================================
-   CÓDIGO PYTHON — VISUALIZADOR
-========================================== */
+/* Exemplos de código */
 
 .algorithm-code {
     height: 100%;
@@ -509,7 +476,6 @@
     font-size: 13px;
     line-height: 1.8;
 }
-
 
 .code-language-selector {
     position: relative;
@@ -572,10 +538,7 @@
     display: none;
 }
 
-
-/* ==========================================
-   ORGANIZAÇÃO DA EXECUÇÃO E IMPLEMENTAÇÃO
-========================================== */
+/* Layout da demonstração e dos exemplos de código */
 
 .bubble-display > .row {
     display: flex;
@@ -616,4 +579,3 @@
     }
 
 }
-
